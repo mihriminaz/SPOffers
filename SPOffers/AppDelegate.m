@@ -8,13 +8,19 @@
 
 #import "AppDelegate.h"
 #import "SponsorPaySDK.h"
+#import "SPConfiguration.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<JMFModuleManagerDelegate>
+@property (readwrite, strong) SPMobileAPIAdapter *apiAdapter;
 
 @end
 
 @implementation AppDelegate
 
++ (AppDelegate *)appDelegate
+{
+    return (AppDelegate *)[UIApplication sharedApplication].delegate;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -24,6 +30,7 @@
                    securityToken:@"1c915e3b5d42d05136185030892fbb846c278927"];
     
     
+    [self configurationSetUp:application withLaunchOptions:launchOptions];
     return YES;
 }
 
@@ -47,6 +54,85 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(void)configurationSetUp:(UIApplication*)theApplication withLaunchOptions:(NSDictionary*)launchOptions {
+    
+    SPConfiguration *config = [SPConfiguration sharedConfiguration];
+    NSString *baseURLString = [config baseURLString];
+    
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"SPUseOverrideURL"])
+    {
+        NSString *override = [[NSUserDefaults standardUserDefaults] stringForKey:@"SPEndpointOverrideURL"];
+        if ([override length] > 0)
+        {
+            baseURLString = override;
+        }
+    }
+    
+    // Initialize the application framework
+    NSArray *moduleConfigs = @[@{@"ModuleClassName":@"DCSModule",
+                                 @"ModuleOverrides" :
+                                     @{@"ClientProperties" :
+                                           @{@"Production":
+                                                 @{@"siteID": @0, @"applicationName":@"SPOFFERS"}
+                                             },
+                                       @"Staging":
+                                           @{@"siteID": @0, @"applicationName":@"SPOFFERS"}
+                                       }
+                                 }
+                               ];
+    
+    [[JMFModuleManager sharedManagerWithDelegate:self moduleConfigs:moduleConfigs] application:theApplication didFinishLaunchingWithOptions:launchOptions];
+    // Setup logging
+    EnableLogging();
+    [JMFNetworkManager sharedManager].logsEnabled = YES;
+    
+    self.apiAdapter = [[SPMobileAPIAdapter alloc] initWithBaseURLString:baseURLString endpointPath:[config endpointPath]];
+    
+}
+
+
+
+- (void)handleNetworkError:(NSError *)error
+{
+    if (error == nil)
+    {
+        return;
+    }
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self showNetworkErrorSheet:error];
+    });
+}
+
+- (void)showNetworkErrorSheet:(NSError *)error
+{
+    if ([[error domain] isEqualToString:[SPMobileAPIAdapter errorDomain]] && [error code] == 403)
+    {
+        //first logout then show dialog
+        //but before check for currenct associate, if it was nil, that means we already logged out, don't show anything
+        //     if (self.currentAssociate) {
+        //        self.currentAssociate = nil;
+        //        [[SPAlertManager sharedManager] showAlertWithTitle:SPLocalizedString(@"SESSION_INVALID", nil)
+        //                                                  message:SPLocalizedString(@"SESSION_INVALID_EXPLANATION", nil)
+        //                                         cancelButtonTitle:SPLocalizedString(@"LOGIN_BUTTON_TITLE", nil)
+        //                                        otherButtonTitles:nil
+        //                                        completionHandler:nil];
+        //  }
+    }
+    
+    else if ([error code] == NSURLErrorCancelled)
+    {
+        //999 is the error code for NSURLErrorCancelled that denotes successful cancel operation.
+        //So, instead of displaying this error, we thought suppressing it in the app delegate might be a useful solution.
+    }
+    
+    else
+    {
+        // dialog then pretend it never happened
+        [[SPAlertManager sharedManager] showAlertWithOnlyTitle:SPLocalizedString(@"NETWORK_ERROR", nil) message:[error localizedDescription]];
+    }
 }
 
 @end

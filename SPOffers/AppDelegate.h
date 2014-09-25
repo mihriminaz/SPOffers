@@ -11,7 +11,10 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (readonly, strong) SPMobileAPIAdapter *apiAdapter;
 
++ (AppDelegate *)appDelegate;
 
+- (void)handleNetworkError:(NSError *)error;
 @end
 
