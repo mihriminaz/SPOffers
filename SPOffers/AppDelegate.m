@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SponsorPaySDK.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [SponsorPaySDK startForAppId:@"2070"
+                          userId:@"spiderman"
+                   securityToken:@"1c915e3b5d42d05136185030892fbb846c278927"];
+    
+    
     return YES;
 }
 

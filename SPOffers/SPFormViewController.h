@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SPFormViewController.h
 //  SPOffers
 //
 //  Created by Mihriban Minaz on 25/09/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SPFormViewController : UIViewController
 
 
 @end
