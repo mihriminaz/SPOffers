@@ -9,8 +9,43 @@
 #ifndef SPOffers_SPPrefixHeader_pch
 #define SPOffers_SPPrefixHeader_pch
 
+#ifdef __OBJC__
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import "Constants.h"
+#import "SPUtility.h"
+#import "SPLocalizationManager.h"
+#import "UIColor+SPAdditions.h"
+#import "UIFont+SPAdditions.h"
+#import "UIButton+SPAdditions.h"
+//#import "UILabel+SPAdditions.h"
+#import "SPAlertManager.h"
+//#import "SPAppSettings.h"
+#import "UIView+FrameTransform.h"
+#import "UIView+CustomNib.h"
+#import "SPMobileAPIAdapter.h"
+#import "JMFNetworkManager.h"
+#import "SPAlertManager.h"
+#import "JMFDebugLoggingProtocol.h"
+#import "JMFUtilities.h"
+#import "UIView+GestureRecognizers.h"
+#import "Reachability.h"
+#endif
+
+#ifdef DEBUG
+#define DebugLog(...) NSLog(__VA_ARGS__) // LogMessageF(__FILE__, __LINE__, __PRETTY_FUNCTION__, nil, 0, __VA_ARGS__)
+#define DebugLogNetwork(...) NSLog(__VA_ARGS__) // LogMessageF(__FILE__, __LINE__, __PRETTY_FUNCTION__, @"Network", 0, __VA_ARGS__)
+#define DebugLogJSON(...) NSLog(__VA_ARGS__) // LogMessageF(__FILE__, __LINE__, __PRETTY_FUNCTION__, @"JSON", 0, __VA_ARGS__)
+#define _ASSERT(STATEMENT) do { assert(STATEMENT); } while(0)
+#else
+#define DebugLog(s, ... )
+#define DebugLogNetwork(s, ... )
+#define DebugLogJSON(s, ... )
+#define _ASSERT(STATEMENT) do { (void) sizeof(STATEMENT); } while(0)
+#endif
+
+
+#define SPLocalizedString(key, comment) [[SPLocalizationManager sharedInstance] localizedStringForKey:key]
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
