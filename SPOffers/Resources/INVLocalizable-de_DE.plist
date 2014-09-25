@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NOT_ENABLED</key>
+	<string>Nicht aktiv</string>
+	<key>OK</key>
+	<string>OK</string>
+	<key>Cancel</key>
+	<string>Abbrechen</string>
+	<key>Yes</key>
+	<string>Ja</string>
+	<key>No</key>
+	<string>Nein</string>
+	<key>YES</key>
+	<string>JA</string>
+	<key>NO</key>
+	<string>NEIN</string>
+	<key>Next&gt;&gt;</key>
+	<string>Weiter &gt;&gt;</string>
+	<key>Error</key>
+	<string>Fehler</string>
+	<key>AppPermissionDenied</key>
+	<string>Wir finden dich nicht. Bist du sicher dass der Ortungsdienst für Invitans eingeschaltet ist?</string>
+	<key>EnableAppLocationMessage</key>
+	<string>Bitte änderen Sie ihre Geräteeänstellung, aktivieren Sie den Ortungsdienst für Invitans.</string>
+	<key>LocationServicesDisabled</key>
+	<string>Ortungsdienste ausgeschaltet</string>
+	<key>EnableLocationMessage</key>
+	<string>Bitte änderen Sie ihre Geräteeänstellung, aktivieren Sie den Ortungsdienst für Invitans.</string>
+	<key>NETWORK_ERROR</key>
+	<string>NETZWERKFEHLER</string>
+	<key>Cellular</key>
+	<string>Zellular</string>
+	<key>Wifi</key>
+	<string>WLAN</string>
+	<key>No_Connection</key>
+	<string>Keine Verbindung</string>
+	<key>Loading…</key>
+	<string>Laden…</string>
+	<key>keyboardOK</key>
+	<string>OK</string>
+	<key>keyboardPrevious</key>
+	<string>Vorher</string>
+	<key>keyboardNext</key>
+	<string>Nachher</string>
+	<key>DONE</key>
+	<string>OK</string>
+	<key>CANCEL</key>
+	<string>ABBRECHEN</string>
+	<key>MANDATORYFIELDS</key>
+	<string>Bitte Ausfüllen:</string>
+	<key>AlertInfo</key>
+	<string>Info</string>
+	<key>ALERTINFO</key>
+	<string>INFO</string>
+	<key>DONE_BUTTON_TITLE</key>
+	<string>Ok</string>
+	<key>Version</key>
+	<string>Version</string>
+	<key>LOADING</key>
+	<string>WIRD GELADEN</string>
+	<key>WAITING</key>
+	<string>WARTEN</string>
+	<key>SENDING</key>
+	<string>SENDET</string>
+	<key>Warning</key>
+	<string>Warnung</string>
+	<key>Later</key>
+	<string>Später</string>
+	<key>WRONGDATA</key>
+	<string>FALSCHE ANGABEN</string>
+	<key>Done</key>
+	<string>Benutzen</string>
+	<key>Success!</key>
+	<string>Erfolgreich!</string>
+	<key>Success</key>
+	<string>Erfolgreich</string>
+	<key>Waiting</key>
+	<string>Warten</string>
+	<key>Info</key>
+	<string>Info</string>
+	<key>INFO</key>
+	<string>INFO</string>
+	<key>SEND</key>
+	<string>SENDEN</string>
+	<key>Send</key>
+	<string>Senden</string>
+	<key>Parameter Error</key>
+	<string>Parameter Error</string>
+	<key>Illegal parameter supplied to encryption/decryption algorithm</key>
+	<string>Illegal parameter supplied to encryption/decryption algorithm</string>
+	<key>Buffer Too Small</key>
+	<string>Buffer Too Small</string>
+	<key>Insufficient buffer provided for specified operation</key>
+	<string>Insufficient buffer provided for specified operation</string>
+	<key>Memory Failure</key>
+	<string>Memory Failure</string>
+	<key>Failed to allocate memory</key>
+	<string>Failed to allocate memory</string>
+	<key>Alignment Error</key>
+	<string>Alignment Error</string>
+	<key>Input size to encryption algorithm was not aligned correctly</key>
+	<string>Input size to encryption algorithm was not aligned correctly</string>
+	<key>Decode Error</key>
+	<string>Decode Error</string>
+	<key>Input data did not decode or decrypt correctly</key>
+	<string>Input data did not decode or decrypt correctly</string>
+	<key>Unimplemented Function</key>
+	<string>Unimplemented Function</string>
+	<key>Function not implemented for the current algorithm</key>
+	<string>Function not implemented for the current algorithm</string>
+	<key>Unknown Error</key>
+	<string>Unknown Error</string>
+	<key>CANCELLINGREQUEST</key>
+	<string>ANFRAGE WIRD ZURÜCKGEZOGEN</string>
+	<key>ConnectionProblem</key>
+	<string>Verbindungsfehler</string>
+	<key>Next</key>
+	<string>Weiter</string>
+	<key>Skip</key>
+	<string>Überspringen</string>
+	<key>AppId</key>
+	<string>AppId</string>
+	<key>UserId</key>
+	<string>UserId</string>
+	<key>ApiKey</key>
+	<string>API KEY</string>
+	<key>Pub0</key>
+	<string>pub0</string>
+</dict>
+</plist>

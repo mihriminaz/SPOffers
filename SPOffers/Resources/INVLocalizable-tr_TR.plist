@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NOT_ENABLED</key>
+	<string>Etkin Değil</string>
+	<key>OK</key>
+	<string>Tamam</string>
+	<key>Cancel</key>
+	<string>İptal</string>
+	<key>Yes</key>
+	<string>Evet</string>
+	<key>No</key>
+	<string>Hayır</string>
+	<key>YES</key>
+	<string>EVET</string>
+	<key>NO</key>
+	<string>HAYIR</string>
+	<key>Next&gt;&gt;</key>
+	<string>Devam Et &gt;&gt;</string>
+	<key>Error</key>
+	<string>Hata</string>
+	<key>AppPermissionDenied</key>
+	<string>Nerede olduğunu bulamıyoruz. Invitans için Konum Servislerinin açık olduğuna emin misin?</string>
+	<key>EnableAppLocationMessage</key>
+	<string>Lütfen cihazınızın ayarlarını değiştirip, Konum Servislerini Invitans için aktif hâle getirin.</string>
+	<key>LocationServicesDisabled</key>
+	<string>Konum Servisleri Kapalı</string>
+	<key>EnableLocationMessage</key>
+	<string>Lütfen cihazınızın ayarlarını değiştirip, Konum Servislerini Invitans için aktif hâle getirin.</string>
+	<key>NETWORK_ERROR</key>
+	<string>Ağ Hatası</string>
+	<key>Cellular</key>
+	<string>Hücresel</string>
+	<key>Wifi</key>
+	<string>Kablosuz Bağlantı</string>
+	<key>No_Connection</key>
+	<string>Bağlantı Yok</string>
+	<key>Loading…</key>
+	<string>Yükleniyor…</string>
+	<key>keyboardOK</key>
+	<string>Tamam</string>
+	<key>keyboardPrevious</key>
+	<string>Önceki</string>
+	<key>keyboardNext</key>
+	<string>Sonraki</string>
+	<key>DONE</key>
+	<string>TAMAM</string>
+	<key>CANCEL</key>
+	<string>İPTAL</string>
+	<key>MANDATORYFIELDS</key>
+	<string>BU ALANLARI DOLDURMADINIZ:</string>
+	<key>AlertInfo</key>
+	<string>Bilgi</string>
+	<key>ALERTINFO</key>
+	<string>BİLGİ</string>
+	<key>DONE_BUTTON_TITLE</key>
+	<string>TAMAM</string>
+	<key>Version</key>
+	<string>Versiyon</string>
+	<key>LOADING</key>
+	<string>YÜKLENİYOR</string>
+	<key>WAITING</key>
+	<string>BEKLEMEDE</string>
+	<key>SENDING</key>
+	<string>GÖNDERİLİYOR</string>
+	<key>Warning</key>
+	<string>Uyarı</string>
+	<key>Later</key>
+	<string>Sonra</string>
+	<key>WRONGDATA</key>
+	<string>HATALI BİLGİ</string>
+	<key>Done</key>
+	<string>Kullan</string>
+	<key>Success!</key>
+	<string>Başarılı!</string>
+	<key>Success</key>
+	<string>Başarılı</string>
+	<key>Waiting</key>
+	<string>Beklemede</string>
+	<key>Info</key>
+	<string>Bilgi</string>
+	<key>INFO</key>
+	<string>BİLGİ</string>
+	<key>SEND</key>
+	<string>GÖNDER</string>
+	<key>Send</key>
+	<string>Gönder</string>
+	<key>Parameter Error</key>
+	<string>Parameter Error</string>
+	<key>Illegal parameter supplied to encryption/decryption algorithm</key>
+	<string>Illegal parameter supplied to encryption/decryption algorithm</string>
+	<key>Buffer Too Small</key>
+	<string>Buffer Too Small</string>
+	<key>Insufficient buffer provided for specified operation</key>
+	<string>Insufficient buffer provided for specified operation</string>
+	<key>Memory Failure</key>
+	<string>Memory Failure</string>
+	<key>Failed to allocate memory</key>
+	<string>Failed to allocate memory</string>
+	<key>Alignment Error</key>
+	<string>Alignment Error</string>
+	<key>Input size to encryption algorithm was not aligned correctly</key>
+	<string>Input size to encryption algorithm was not aligned correctly</string>
+	<key>Decode Error</key>
+	<string>Decode Error</string>
+	<key>Input data did not decode or decrypt correctly</key>
+	<string>Input data did not decode or decrypt correctly</string>
+	<key>Unimplemented Function</key>
+	<string>Unimplemented Function</string>
+	<key>Function not implemented for the current algorithm</key>
+	<string>Function not implemented for the current algorithm</string>
+	<key>Unknown Error</key>
+	<string>Unknown Error</string>
+	<key>CANCELLINGREQUEST</key>
+	<string>İSTEK GERİ ÇEKİLİYOR</string>
+	<key>TheInternetconnectionappearstobeoffline</key>
+	<string>İnternet bağlantınız çevrimdışı olarak gözüküyor. Lütfen kontrol edin.</string>
+	<key>ConnectionProblem</key>
+	<string>Bağlantı Sorunu</string>
+	<key>Next</key>
+	<string>Sonraki</string>
+	<key>Skip</key>
+	<string>Geç</string>
+    <key>AppId</key>
+    <string>AppId</string>
+    <key>UserId</key>
+    <string>UserId</string>
+    <key>ApiKey</key>
+    <string>API KEY</string>
+    <key>Pub0</key>
+    <string>pub0</string>
+</dict>
+</plist>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NOT_ENABLED</key>
+	<string>Not Enabled</string>
+	<key>OK</key>
+	<string>OK</string>
+	<key>Cancel</key>
+	<string>Cancel</string>
+	<key>Yes</key>
+	<string>Yes</string>
+	<key>No</key>
+	<string>No</string>
+	<key>YES</key>
+	<string>YES</string>
+	<key>NO</key>
+	<string>NO</string>
+	<key>Next&gt;&gt;</key>
+	<string>Next &gt;&gt;</string>
+	<key>Error</key>
+	<string>Error</string>
+	<key>AppPermissionDenied</key>
+	<string>Your location cannot be found. Make sure your Location Services are turned on.</string>
+	<key>EnableAppLocationMessage</key>
+	<string>Please change the settings of your device and enable Location Services for Invitans.</string>
+	<key>LocationServicesDisabled</key>
+	<string>Location Services Are Disabled</string>
+	<key>EnableLocationMessage</key>
+	<string>Please change the settings of your device and enable Location Services for Invitans.</string>
+	<key>NETWORK_ERROR</key>
+	<string>Network Error</string>
+	<key>Cellular</key>
+	<string>Cellular</string>
+	<key>Wifi</key>
+	<string>Wifi</string>
+	<key>No_Connection</key>
+	<string>No Connection</string>
+	<key>Loading…</key>
+	<string>Loading…</string>
+	<key>keyboardOK</key>
+	<string>OK</string>
+	<key>keyboardPrevious</key>
+	<string>Pre</string>
+	<key>keyboardNext</key>
+	<string>Next</string>
+	<key>DONE</key>
+	<string>DONE</string>
+	<key>CANCEL</key>
+	<string>CANCEL</string>
+	<key>MANDATORYFIELDS</key>
+	<string>YOU CAN&apos;T LEAVE THESE EMPTY:</string>
+	<key>AlertInfo</key>
+	<string>Info</string>
+	<key>ALERTINFO</key>
+	<string>INFO</string>
+	<key>DONE_BUTTON_TITLE</key>
+	<string>DONE</string>
+	<key>Version</key>
+	<string>Version</string>
+	<key>LOADING</key>
+	<string>LOADING</string>
+	<key>WAITING</key>
+	<string>WAITING</string>
+	<key>SENDING</key>
+	<string>SENDING</string>
+	<key>Warning</key>
+	<string>Warning</string>
+	<key>Later</key>
+	<string>Later</string>
+	<key>WRONGDATA</key>
+	<string>WRONG DATA</string>
+	<key>Done</key>
+	<string>Done</string>
+	<key>Success!</key>
+	<string>Success!</string>
+	<key>Success</key>
+	<string>Success</string>
+	<key>Waiting</key>
+	<string>Waiting</string>
+	<key>Info</key>
+	<string>Info</string>
+	<key>INFO</key>
+	<string>INFO</string>
+	<key>SEND</key>
+	<string>SEND</string>
+	<key>Send</key>
+	<string>Send</string>
+	<key>Parameter Error</key>
+	<string>Parameter Error</string>
+	<key>Illegal parameter supplied to encryption/decryption algorithm</key>
+	<string>Illegal parameter supplied to encryption/decryption algorithm</string>
+	<key>Buffer Too Small</key>
+	<string>Buffer Too Small</string>
+	<key>Insufficient buffer provided for specified operation</key>
+	<string>Insufficient buffer provided for specified operation</string>
+	<key>Memory Failure</key>
+	<string>Memory Failure</string>
+	<key>Failed to allocate memory</key>
+	<string>Failed to allocate memory</string>
+	<key>Alignment Error</key>
+	<string>Alignment Error</string>
+	<key>Input size to encryption algorithm was not aligned correctly</key>
+	<string>Input size to encryption algorithm was not aligned correctly</string>
+	<key>Decode Error</key>
+	<string>Decode Error</string>
+	<key>Input data did not decode or decrypt correctly</key>
+	<string>Input data did not decode or decrypt correctly</string>
+	<key>Unimplemented Function</key>
+	<string>Unimplemented Function</string>
+	<key>Function not implemented for the current algorithm</key>
+	<string>Function not implemented for the current algorithm</string>
+	<key>Unknown Error</key>
+	<string>Unknown Error</string>
+	<key>CANCELLINGREQUEST</key>
+	<string>CANCELLING REQUEST</string>
+	<key>TheInternetconnectionappearstobeoffline</key>
+	<string>The Internet connection appears to be offline. Please check your Wi-Fi/Cellular settings.</string>
+	<key>ConnectionProblem</key>
+	<string>Connection Problem</string>
+	<key>Next</key>
+	<string>Next</string>
+	<key>Skip</key>
+	<string>Skip</string>
+    <key>AppId</key>
+    <string>AppId</string>
+    <key>UserId</key>
+    <string>UserId</string>
+    <key>ApiKey</key>
+    <string>API KEY</string>
+    <key>Pub0</key>
+    <string>pub0</string>
+</dict>
+</plist>
