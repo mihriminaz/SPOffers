@@ -1,0 +1,6 @@
+{
+    "baseURLString": "http://invitans.info/",
+    "endpointPath": "api/",
+    "configurationURLString": "https://invitans.info/api/configuration",
+    "applicationAssetsNumber": 1,
+}
