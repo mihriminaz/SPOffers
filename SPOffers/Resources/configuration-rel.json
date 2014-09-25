@@ -1,0 +1,6 @@
+{
+    "baseURLString": "http://api.sponsorpay.com/",
+    "endpointPath": "feed/v1/",
+    "configurationURLString": "http://api.sponsorpay.com/",
+    "applicationAssetsNumber": 1,
+}
