@@ -100,7 +100,7 @@
     [aDict setObject:[[NSLocale currentLocale] localeIdentifier] forKey:@"locale"];
     [aDict setObject:[[SPUtility sharedUtility] getIPAddress] forKey:@"ip"];
     [aDict setObject:_M([[UIDevice currentDevice] systemVersion]) forKey:@"os_version"];
-    [aDict setObject:@"112" forKey:@"offer_types"];
+    //[aDict setObject:@"112" forKey:@"offer_types"];
     [aDict setObject:[NSString stringWithFormat:@"%f",[[NSDate date] timeIntervalSince1970]] forKey:@"timestamp"];
     
     

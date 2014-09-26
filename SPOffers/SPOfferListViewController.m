@@ -45,11 +45,6 @@
     
     self.offerList = [[NSMutableArray alloc] init];
     [self.offerList addObjectsFromArray:self.theOfferResponse.offers];
-    [self.offerList addObjectsFromArray:self.theOfferResponse.offers];
-    [self.offerList addObjectsFromArray:self.theOfferResponse.offers];
-    [self.offerList addObjectsFromArray:self.theOfferResponse.offers];
-    [self.offerList addObjectsFromArray:self.theOfferResponse.offers];
-    [self.offerList addObjectsFromArray:self.theOfferResponse.offers];
 }
 
 - (void)viewDidLoad
