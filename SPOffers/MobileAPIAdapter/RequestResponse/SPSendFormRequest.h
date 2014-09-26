@@ -8,6 +8,7 @@
 
 #import "SPMobileAPIBaseNetRequest.h"
 #import "SPMobileAPIBaseResponse.h"
+@class SPOfferResponse;
 
 @interface SPSendFormRequest : SPMobileAPIBaseNetRequest
 
@@ -16,5 +17,6 @@
 @end
 
 @interface SPSendFormResponse : SPMobileAPIBaseResponse
+@property (nonatomic, readonly, strong) SPOfferResponse *offerResponse;
 
 @end

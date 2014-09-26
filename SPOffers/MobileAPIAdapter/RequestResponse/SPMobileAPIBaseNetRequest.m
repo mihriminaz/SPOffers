@@ -14,9 +14,6 @@ static NSString *s_baseURL;
 @interface SPMobileAPIBaseNetRequest ()
 @property (nonatomic, copy) NSString *baseURL;
 @property (nonatomic, copy) NSString *appAuthToken;
-@property (nonatomic, copy) NSString *fbAuthToken;
-@property (nonatomic, copy) NSString *gAuthToken;
-@property (nonatomic, copy) NSString *invAuthToken;
 @end
 
 @implementation SPMobileAPIBaseNetRequest
@@ -35,26 +32,6 @@ static NSString *s_baseURL;
 	return self;
 }
 
-- (id)initWithFbToken :(NSString*)fbToken
-{
-	NSAssert(s_baseURL != nil, @"You must initialize the base request before using it.");
-	
-	if (self = [self init])
-	{
-		_logRequest = YES;
-		_logResponse = YES;
-        _fbAuthToken = fbToken;
-        _gAuthToken = nil;
-        _invAuthToken = nil;
-        _appAuthToken = nil;
-        
-		_baseURL = s_baseURL;
-        
-	}
-	
-	return self;
-}
-
 - (id)initWithAppToken
 {
 	NSAssert(s_baseURL != nil, @"You must initialize the base request before using it.");
@@ -63,9 +40,6 @@ static NSString *s_baseURL;
 	{
 		_logRequest = YES;
 		_logResponse = YES;
-        _fbAuthToken = nil;
-        _gAuthToken = nil;
-        _invAuthToken = nil;
         _appAuthToken = [SPAuthenticationManager sharedManager].appAuthenticationToken;
         
 		_baseURL = s_baseURL;
@@ -81,6 +55,10 @@ static NSString *s_baseURL;
         [self.httpHeaders setObject:[SPAuthenticationManager sharedManager].appAuthenticationToken
                              forKey:SPAppTokenHeader];
     }
+    
+    
+    [self.httpHeaders setObject:@"keep-alive" forKey:@"Connection"];
+    [self.httpHeaders setObject:@"gzip" forKey:@"Accept-Encoding"];
 
 	[super configureURLRequestHeaders:urlRequest];
 }

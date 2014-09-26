@@ -12,6 +12,5 @@
 @property (readonly, nonatomic, copy) NSString *baseURL;
 
 + (void)setBaseURL:(NSString *)baseURL;
-- (id)initWithFbToken :(NSString*)fbToken;
 - (id)initWithAppToken;
 @end

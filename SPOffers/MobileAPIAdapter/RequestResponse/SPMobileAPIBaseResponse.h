@@ -10,12 +10,10 @@
 #import "SPError.h"
 
 @interface SPMobileAPIBaseResponse : JMFJSONResponse
-@property (nonatomic, copy) NSString *fbAuthToken;
-@property (nonatomic, copy) NSString *gAuthToken;
-@property (nonatomic, copy) NSString *invAuthToken;
 @property (nonatomic, copy) NSString *appAuthToken;
-@property (nonatomic, copy) NSString *status;
-@property (nonatomic, strong) SPError *error;
-@property (nonatomic, copy) NSString *successMessage;
+@property (nonatomic, copy) NSString *count;
+@property (nonatomic, copy) NSString *pages;
+@property (nonatomic, copy) NSString *code;
+@property (nonatomic, copy) NSString *message;
 
 @end

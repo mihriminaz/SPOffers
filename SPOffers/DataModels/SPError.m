@@ -15,7 +15,7 @@
     
     if (self) {
         
-        self.code = [dictionary jmf_integerValueForKey:@"code"];
+        self.code = [dictionary jmf_stringValueForKey:@"code"];
         self.message = [dictionary jmf_stringValueForKey:@"message"];
     }
 	
@@ -26,7 +26,7 @@
     NSMutableDictionary *requestDict = [[NSMutableDictionary alloc] init];
     
     if (self.code) {
-        [requestDict setObject:[NSString stringWithFormat:@"%ld", (long)self.code] forKey:@"code"];
+        [requestDict setObject:self.code forKey:@"code"];
     }
     
     if (self.message) {
@@ -39,7 +39,7 @@
 #pragma mark -
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"%ld %@", (long)self.code, self.message];
+    return [NSString stringWithFormat:@"%@ %@", self.code, self.message];
 }
 
 @end

@@ -10,7 +10,7 @@
 
 @interface SPError : NSObject
 
-@property (nonatomic, assign)  NSInteger code;
+@property (nonatomic, strong)  NSString *code;
 @property (nonatomic, strong)  NSString *message;
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;

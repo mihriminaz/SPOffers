@@ -78,7 +78,7 @@
 	}
 	else
 	{
-		if ((inResponse.error==nil)&&(inResponse.httpStatusCode / 200 == 1))
+		if (([inResponse.code isEqualToString:@"OK"])&&(inResponse.httpStatusCode / 200 == 1))
 		{
 			return nil;
 		}
@@ -89,19 +89,19 @@
 			NSString *failureDescription = [responseDict objectForKey:@"description"];
 			
             NSError *error;
-            if (inResponse.error!=nil)
+            if (![inResponse.code isEqualToString:@"OK"])
             {
                 NSMutableDictionary *dict = [NSMutableDictionary dictionary];
                 NSString *errorMessage;
-                if(inResponse.error.message ==nil) {
+                if([inResponse.message length]) {
                     errorMessage=@"";
                 }
                 else{
-                    errorMessage=inResponse.error.message;
+                    errorMessage=inResponse.message;
                 }
                     
                 [dict setObject:errorMessage forKey:NSLocalizedFailureReasonErrorKey];
-                error = [NSError errorWithDomain:[SPMobileAPIAdapter errorDomain] code:inResponse.error.code userInfo:dict];
+                error = [NSError errorWithDomain:[SPMobileAPIAdapter errorDomain] code:[inResponse.code integerValue] userInfo:dict];
             
             }
             else{

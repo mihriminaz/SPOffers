@@ -30,16 +30,10 @@
 		[super parseData:responseData];
 	}
 	
-    self.status = [self.responseDict objectForKey:@"status"];
-    if (![self.status isEqualToString:@"OK"]) {
-        self.error = [[SPError alloc] initWithDictionary:[self.responseDict jmf_dictionaryValueForKey:@"error"]];
-        DebugLog(@"ststusnotok %ld", (long)self.error.code);
-        if (self.error.code==kAUTHENTICATIONFAILERROR) {
-        }
-    }
-    else{
-	self.successMessage = [self.responseDict objectForKey:@"successMessage"];
-    }
+    self.code = [self.responseDict jmf_stringValueForKey:@"code"];
+    self.message = [self.responseDict jmf_stringValueForKey:@"message"];
+    self.count = [self.responseDict jmf_stringValueForKey:@"count"];
+    self.pages = [self.responseDict jmf_stringValueForKey:@"pages"];
 
 	NSString *appAuthToken = self.httpResponseHeaders[SPAppTokenHeader];
 	if ([appAuthToken length]>0)

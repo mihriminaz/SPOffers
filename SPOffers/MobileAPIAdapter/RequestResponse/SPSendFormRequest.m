@@ -9,6 +9,9 @@
 #import "SPSendFormRequest.h"
 #import "SPSignature.h"
 #import "NSDictionary+SPSortAddition.h"
+#import "NSString+Hashes.h"
+#import "JMFXMLNode.h"
+#import "SPOfferResponse.h"
 
 @interface SPSendFormRequest()
 
@@ -33,16 +36,21 @@
 - (NSURL *)requestURL
 {
 	// stringByAppendingPathComponent will collapse out double slashes, so we'll use NSURL as a proxy (until I fix CFLite to use actual URLs)
-	NSURL *url = [NSURL URLWithString:self.baseURL];
+	
     
-    NSString *requestString = [self.formDict requestComponentsJoinedBy:@"&" keyValueSepator:@"="];
+    NSString *requestString = [[self.formDict requestComponentsJoinedBy:@"&" keyValueSepator:@"="] lowercaseString];
     DebugLog(@"requestString %@",requestString);
     
-    NSString *lowerRequestSHA1String = [SPSignature formattedSHA1forString:requestString lowerCase:YES];
+    NSMutableString *theConcString = [[NSMutableString alloc] initWithString:requestString];
+    [theConcString appendString:@"&1c915e3b5d42d05136185030892fbb846c278927"];
+    
+    DebugLog(@"theConcString %@",theConcString);
+    
+    NSString *lowerRequestSHA1String = [theConcString sha1];
     DebugLog(@"lowerRequestSHA1String %@",lowerRequestSHA1String);
     
     
-	url = [url URLByAppendingPathComponent:[NSString stringWithFormat:@"offers.json?%@&hashkey=%@",requestString,lowerRequestSHA1String]];
+    NSURL *url = [NSURL URLWithString:[[NSString stringWithFormat:@"%@offers.json?%@&hashkey=%@",self.baseURL,requestString,lowerRequestSHA1String] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     
 	self.url = [url absoluteString];
     DebugLog(@"myurlis %@",self.url);
@@ -62,6 +70,7 @@
 @end
 
 @interface SPSendFormResponse ()
+@property (nonatomic, readwrite, strong) SPOfferResponse *offerResponse;
 
 @end
 
@@ -70,8 +79,32 @@
 - (void)parseData:(NSData *)responseData
 {
 	[super parseData:responseData];
-	
-//	self.createdEvent = [[SPEvent alloc] initWithDictionary:[self.responseDict jmf_dictionaryValueForKey:@"events"]];
+    
+	NSString* responseDataString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+    
+    
+    DebugLog(@"responseDataString  %@", responseDataString);
+    
+    
+    NSMutableString *theConcString = [[NSMutableString alloc] initWithString:responseDataString];
+    [theConcString appendString:@"1c915e3b5d42d05136185030892fbb846c278927"];
+    DebugLog(@"theConcString  %@", theConcString);
+    
+   NSString *theResponseSHA1 = [self.httpResponseHeaders objectForKey:@"X-Sponsorpay-Response-Signature"];
+    
+    DebugLog(@"theResponseSHA1 %@",theResponseSHA1);
+    NSString *responseSHA1String = [theConcString sha1];
+    DebugLog(@"responseSHA1String %@",responseSHA1String);
+    
+    if ([theResponseSHA1 isEqualToString:responseSHA1String]) {
+        DebugLog(@"yeees");
+        
+        self.offerResponse = [[SPOfferResponse alloc] initWithDictionary:self.responseDict];
+        
+    }
+    else {
+            DebugLog(@"noooo");
+    }
     
 }
 
