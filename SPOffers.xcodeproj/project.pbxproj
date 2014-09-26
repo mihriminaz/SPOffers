@@ -59,6 +59,13 @@
 		1967C8E219D4630A001E6656 /* INVLocalizable-en_US.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1967C8DF19D4630A001E6656 /* INVLocalizable-en_US.plist */; };
 		1967C8E319D4630A001E6656 /* INVLocalizable-tr_TR.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1967C8E019D4630A001E6656 /* INVLocalizable-tr_TR.plist */; };
 		1967C8E619D46857001E6656 /* NSDictionary+SPSortAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C8E519D46857001E6656 /* NSDictionary+SPSortAddition.m */; };
+		1967C8E919D57D40001E6656 /* NSString+Hashes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C8E819D57D40001E6656 /* NSString+Hashes.m */; };
+		1967C8F119D59228001E6656 /* SPOfferResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C8F019D59228001E6656 /* SPOfferResponse.m */; };
+		1967C8F419D5942B001E6656 /* SPOfferInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C8F319D5942B001E6656 /* SPOfferInformation.m */; };
+		1967C8FB19D594CA001E6656 /* SPOfferThumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C8F619D594CA001E6656 /* SPOfferThumbnail.m */; };
+		1967C8FC19D594CA001E6656 /* SPOfferTimeToPayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C8F819D594CA001E6656 /* SPOfferTimeToPayout.m */; };
+		1967C8FD19D594CA001E6656 /* SPOfferType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C8FA19D594CA001E6656 /* SPOfferType.m */; };
+		1967C8FF19D59CB8001E6656 /* SPOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C8FE19D59CB8001E6656 /* SPOffer.m */; };
 		1991A9C519D40B64002C648A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991A9C419D40B64002C648A /* main.m */; };
 		1991A9C819D40B64002C648A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991A9C719D40B64002C648A /* AppDelegate.m */; };
 		1991A9CB19D40B64002C648A /* SPFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991A9CA19D40B64002C648A /* SPFormViewController.m */; };
@@ -243,6 +250,20 @@
 		1967C8E019D4630A001E6656 /* INVLocalizable-tr_TR.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "INVLocalizable-tr_TR.plist"; sourceTree = "<group>"; };
 		1967C8E419D46857001E6656 /* NSDictionary+SPSortAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SPSortAddition.h"; sourceTree = "<group>"; };
 		1967C8E519D46857001E6656 /* NSDictionary+SPSortAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SPSortAddition.m"; sourceTree = "<group>"; };
+		1967C8E719D57D40001E6656 /* NSString+Hashes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hashes.h"; sourceTree = "<group>"; };
+		1967C8E819D57D40001E6656 /* NSString+Hashes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hashes.m"; sourceTree = "<group>"; };
+		1967C8EC19D5913F001E6656 /* SPOffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPOffer.h; sourceTree = "<group>"; };
+		1967C8EF19D59228001E6656 /* SPOfferResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPOfferResponse.h; sourceTree = "<group>"; };
+		1967C8F019D59228001E6656 /* SPOfferResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPOfferResponse.m; sourceTree = "<group>"; };
+		1967C8F219D5942B001E6656 /* SPOfferInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPOfferInformation.h; sourceTree = "<group>"; };
+		1967C8F319D5942B001E6656 /* SPOfferInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPOfferInformation.m; sourceTree = "<group>"; };
+		1967C8F519D594CA001E6656 /* SPOfferThumbnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPOfferThumbnail.h; sourceTree = "<group>"; };
+		1967C8F619D594CA001E6656 /* SPOfferThumbnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPOfferThumbnail.m; sourceTree = "<group>"; };
+		1967C8F719D594CA001E6656 /* SPOfferTimeToPayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPOfferTimeToPayout.h; sourceTree = "<group>"; };
+		1967C8F819D594CA001E6656 /* SPOfferTimeToPayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPOfferTimeToPayout.m; sourceTree = "<group>"; };
+		1967C8F919D594CA001E6656 /* SPOfferType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPOfferType.h; sourceTree = "<group>"; };
+		1967C8FA19D594CA001E6656 /* SPOfferType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPOfferType.m; sourceTree = "<group>"; };
+		1967C8FE19D59CB8001E6656 /* SPOffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPOffer.m; sourceTree = "<group>"; };
 		1991A9BF19D40B64002C648A /* SPOffers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPOffers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1991A9C319D40B64002C648A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1991A9C419D40B64002C648A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -507,6 +528,18 @@
 		1967C87E19D43252001E6656 /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
+				1967C8EF19D59228001E6656 /* SPOfferResponse.h */,
+				1967C8F019D59228001E6656 /* SPOfferResponse.m */,
+				1967C8EC19D5913F001E6656 /* SPOffer.h */,
+				1967C8FE19D59CB8001E6656 /* SPOffer.m */,
+				1967C8F519D594CA001E6656 /* SPOfferThumbnail.h */,
+				1967C8F619D594CA001E6656 /* SPOfferThumbnail.m */,
+				1967C8F719D594CA001E6656 /* SPOfferTimeToPayout.h */,
+				1967C8F819D594CA001E6656 /* SPOfferTimeToPayout.m */,
+				1967C8F919D594CA001E6656 /* SPOfferType.h */,
+				1967C8FA19D594CA001E6656 /* SPOfferType.m */,
+				1967C8F219D5942B001E6656 /* SPOfferInformation.h */,
+				1967C8F319D5942B001E6656 /* SPOfferInformation.m */,
 				1967C88C19D43448001E6656 /* SPError.h */,
 				1967C88D19D43448001E6656 /* SPError.m */,
 				1967C88219D43294001E6656 /* SPUtility.h */,
@@ -570,6 +603,8 @@
 				1967C8B019D43875001E6656 /* UIView+FrameTransform.m */,
 				1967C8E419D46857001E6656 /* NSDictionary+SPSortAddition.h */,
 				1967C8E519D46857001E6656 /* NSDictionary+SPSortAddition.m */,
+				1967C8E719D57D40001E6656 /* NSString+Hashes.h */,
+				1967C8E819D57D40001E6656 /* NSString+Hashes.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -978,11 +1013,13 @@
 				1967C86A19D431B9001E6656 /* NSDictionary+JMFExtensions.m in Sources */,
 				1967C86219D431B9001E6656 /* JMFIdentity.m in Sources */,
 				1991AAAB19D40BF3002C648A /* SPTPNMediationTypes.m in Sources */,
+				1967C8FD19D594CA001E6656 /* SPOfferType.m in Sources */,
 				1991AA9719D40BF3002C648A /* SPOfferWallViewController.m in Sources */,
 				1991AA7819D40BF3002C648A /* SPAdvertisementViewController.m in Sources */,
 				1967C85F19D431B9001E6656 /* JMFNetworkManager.m in Sources */,
 				1967C8B819D43967001E6656 /* UIView+GestureRecognizers.m in Sources */,
 				1991AAAC19D40BF3002C648A /* SPURLGenerator.m in Sources */,
+				1967C8FF19D59CB8001E6656 /* SPOffer.m in Sources */,
 				1967C87919D43203001E6656 /* SPMobileAPIAdapter.m in Sources */,
 				1967C8D019D44EA8001E6656 /* OpenUDID.m in Sources */,
 				1991AA8219D40BF3002C648A /* SPCloseButton.m in Sources */,
@@ -1032,6 +1069,8 @@
 				1967C86319D431B9001E6656 /* JMFKeychainUtils.m in Sources */,
 				1991AAA019D40BF3002C648A /* SPSDKVersionProvider.m in Sources */,
 				1991AA8B19D40BF3002C648A /* SPInterstitialOffer.m in Sources */,
+				1967C8F419D5942B001E6656 /* SPOfferInformation.m in Sources */,
+				1967C8FB19D594CA001E6656 /* SPOfferThumbnail.m in Sources */,
 				1991AAA619D40BF3002C648A /* SPSystemVersionChecker.m in Sources */,
 				1991AAA419D40BF3002C648A /* SPSystemLogger.m in Sources */,
 				1967C8CB19D4463F001E6656 /* NSObject+setValuesForKeysWithJSONDictionary.m in Sources */,
@@ -1043,6 +1082,7 @@
 				1991AA8019D40BF3002C648A /* SPBufferedLogger.m in Sources */,
 				1991AA9F19D40BF3002C648A /* SPSDKFeaturesProvider.m in Sources */,
 				1967C86419D431B9001E6656 /* JMFLoadingOverlay.m in Sources */,
+				1967C8F119D59228001E6656 /* SPOfferResponse.m in Sources */,
 				1967C8BD19D440CA001E6656 /* SPSendFormRequest.m in Sources */,
 				1991AA7E19D40BF3002C648A /* SPBrandEngageViewController.m in Sources */,
 				1991AA8119D40BF3002C648A /* SPCallbackSendingOperation.m in Sources */,
@@ -1056,6 +1096,7 @@
 				1967C8A119D43677001E6656 /* UIView+CustomNib.m in Sources */,
 				1991AA9A19D40BF3002C648A /* SPRandomID.m in Sources */,
 				1967C87B19D43203001E6656 /* SPMobileAPIBaseNetRequest.m in Sources */,
+				1967C8FC19D594CA001E6656 /* SPOfferTimeToPayout.m in Sources */,
 				1991AA8819D40BF3002C648A /* SPInterstitialClient.m in Sources */,
 				1991AA9319D40BF3002C648A /* SPMediationCoordinator.m in Sources */,
 				1991A9C519D40B64002C648A /* main.m in Sources */,
@@ -1063,6 +1104,7 @@
 				1967C8E619D46857001E6656 /* NSDictionary+SPSortAddition.m in Sources */,
 				1967C8C019D44317001E6656 /* SPConfiguration.m in Sources */,
 				1991AA9819D40BF3002C648A /* SponsorPaySDK.m in Sources */,
+				1967C8E919D57D40001E6656 /* NSString+Hashes.m in Sources */,
 				1967C86019D431B9001E6656 /* JMFNSNetOperation.m in Sources */,
 				1991AA8919D40BF3002C648A /* SPInterstitialEvent.m in Sources */,
 				1967C87D19D43203001E6656 /* SPMobileAPIBaseResponse.m in Sources */,
