@@ -21,13 +21,13 @@
 	<key>Error</key>
 	<string>Fehler</string>
 	<key>AppPermissionDenied</key>
-	<string>Wir finden dich nicht. Bist du sicher dass der Ortungsdienst für Invitans eingeschaltet ist?</string>
+	<string>Wir finden dich nicht. Bist du sicher dass der Ortungsdienst für SPOffers eingeschaltet ist?</string>
 	<key>EnableAppLocationMessage</key>
-	<string>Bitte änderen Sie ihre Geräteeänstellung, aktivieren Sie den Ortungsdienst für Invitans.</string>
+	<string>Bitte änderen Sie ihre Geräteeänstellung, aktivieren Sie den Ortungsdienst für SPOffers.</string>
 	<key>LocationServicesDisabled</key>
 	<string>Ortungsdienste ausgeschaltet</string>
 	<key>EnableLocationMessage</key>
-	<string>Bitte änderen Sie ihre Geräteeänstellung, aktivieren Sie den Ortungsdienst für Invitans.</string>
+	<string>Bitte änderen Sie ihre Geräteeänstellung, aktivieren Sie den Ortungsdienst für SPOffers.</string>
 	<key>NETWORK_ERROR</key>
 	<string>NETZWERKFEHLER</string>
 	<key>Cellular</key>

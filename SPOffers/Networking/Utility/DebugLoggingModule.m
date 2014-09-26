@@ -19,7 +19,7 @@
 + (NSString*)defaultUTI
 {
 	// Module's default UTI (does not require customization if only one instance of the module will be installed)
-	return @"com.jaggle.debuglogging";
+	return @"com.minaz.debuglogging";
 }
 
 

@@ -21,13 +21,13 @@
 	<key>Error</key>
 	<string>Hata</string>
 	<key>AppPermissionDenied</key>
-	<string>Nerede olduğunu bulamıyoruz. Invitans için Konum Servislerinin açık olduğuna emin misin?</string>
+	<string>Nerede olduğunu bulamıyoruz. SPOffers için Konum Servislerinin açık olduğuna emin misin?</string>
 	<key>EnableAppLocationMessage</key>
-	<string>Lütfen cihazınızın ayarlarını değiştirip, Konum Servislerini Invitans için aktif hâle getirin.</string>
+	<string>Lütfen cihazınızın ayarlarını değiştirip, Konum Servislerini SPOffers için aktif hâle getirin.</string>
 	<key>LocationServicesDisabled</key>
 	<string>Konum Servisleri Kapalı</string>
 	<key>EnableLocationMessage</key>
-	<string>Lütfen cihazınızın ayarlarını değiştirip, Konum Servislerini Invitans için aktif hâle getirin.</string>
+	<string>Lütfen cihazınızın ayarlarını değiştirip, Konum Servislerini SPOffers için aktif hâle getirin.</string>
 	<key>NETWORK_ERROR</key>
 	<string>Ağ Hatası</string>
 	<key>Cellular</key>

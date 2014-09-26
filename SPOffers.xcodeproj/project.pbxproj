@@ -85,6 +85,11 @@
 		1967C95819D5BB36001E6656 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C94619D5BB36001E6656 /* UIImageView+HighlightedWebCache.m */; };
 		1967C95919D5BB36001E6656 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C94819D5BB36001E6656 /* UIImageView+WebCache.m */; };
 		1967C95A19D5BB36001E6656 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C94A19D5BB36001E6656 /* UIView+WebCacheOperation.m */; };
+		1967C95F19D5E181001E6656 /* SPLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C95D19D5E181001E6656 /* SPLoadingView.m */; };
+		1967C96019D5E181001E6656 /* SPLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1967C95E19D5E181001E6656 /* SPLoadingView.xib */; };
+		1967C96819D5E49C001E6656 /* dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 1967C96319D5E49C001E6656 /* dot.png */; };
+		1967C96919D5E49C001E6656 /* dot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1967C96519D5E49C001E6656 /* dot@2x.png */; };
+		1967C96A19D5E49C001E6656 /* dot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1967C96719D5E49C001E6656 /* dot@3x.png */; };
 		1991A9C519D40B64002C648A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991A9C419D40B64002C648A /* main.m */; };
 		1991A9C819D40B64002C648A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991A9C719D40B64002C648A /* AppDelegate.m */; };
 		1991A9CB19D40B64002C648A /* SPFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991A9CA19D40B64002C648A /* SPFormViewController.m */; };
@@ -321,6 +326,12 @@
 		1967C94819D5BB36001E6656 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		1967C94919D5BB36001E6656 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		1967C94A19D5BB36001E6656 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		1967C95C19D5E181001E6656 /* SPLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLoadingView.h; sourceTree = "<group>"; };
+		1967C95D19D5E181001E6656 /* SPLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLoadingView.m; sourceTree = "<group>"; };
+		1967C95E19D5E181001E6656 /* SPLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPLoadingView.xib; sourceTree = "<group>"; };
+		1967C96319D5E49C001E6656 /* dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dot.png; sourceTree = "<group>"; };
+		1967C96519D5E49C001E6656 /* dot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dot@2x.png"; sourceTree = "<group>"; };
+		1967C96719D5E49C001E6656 /* dot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dot@3x.png"; sourceTree = "<group>"; };
 		1991A9BF19D40B64002C648A /* SPOffers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPOffers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1991A9C319D40B64002C648A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1991A9C419D40B64002C648A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -621,6 +632,7 @@
 		1967C89719D4360C001E6656 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1967C95B19D5E181001E6656 /* Loading */,
 				1967C90019D5A393001E6656 /* SPOfferCell.h */,
 				1967C90119D5A393001E6656 /* SPOfferCell.m */,
 				1967C92719D5B9D1001E6656 /* SPOfferCell.xib */,
@@ -760,6 +772,50 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		1967C95B19D5E181001E6656 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				1967C95C19D5E181001E6656 /* SPLoadingView.h */,
+				1967C95D19D5E181001E6656 /* SPLoadingView.m */,
+				1967C95E19D5E181001E6656 /* SPLoadingView.xib */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		1967C96119D5E49C001E6656 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				1967C96219D5E49C001E6656 /* 1x */,
+				1967C96419D5E49C001E6656 /* 2x */,
+				1967C96619D5E49C001E6656 /* 3x */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		1967C96219D5E49C001E6656 /* 1x */ = {
+			isa = PBXGroup;
+			children = (
+				1967C96319D5E49C001E6656 /* dot.png */,
+			);
+			path = 1x;
+			sourceTree = "<group>";
+		};
+		1967C96419D5E49C001E6656 /* 2x */ = {
+			isa = PBXGroup;
+			children = (
+				1967C96519D5E49C001E6656 /* dot@2x.png */,
+			);
+			path = 2x;
+			sourceTree = "<group>";
+		};
+		1967C96619D5E49C001E6656 /* 3x */ = {
+			isa = PBXGroup;
+			children = (
+				1967C96719D5E49C001E6656 /* dot@3x.png */,
+			);
+			path = 3x;
+			sourceTree = "<group>";
+		};
 		1991A9B619D40B64002C648A = {
 			isa = PBXGroup;
 			children = (
@@ -788,6 +844,7 @@
 				1967C90319D5AB4A001E6656 /* SPOfferListViewController.h */,
 				1967C90419D5AB4A001E6656 /* SPOfferListViewController.m */,
 				1991A9CC19D40B64002C648A /* Main.storyboard */,
+				1967C96119D5E49C001E6656 /* image */,
 				1967C89E19D43668001E6656 /* Utility */,
 				1967C89719D4360C001E6656 /* Views */,
 				1967C88F19D434E2001E6656 /* Managers */,
@@ -1072,11 +1129,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1967C96A19D5E49C001E6656 /* dot@3x.png in Resources */,
 				1991AA7619D40BF3002C648A /* SPCloseX.png in Resources */,
 				1991A9CE19D40B64002C648A /* Main.storyboard in Resources */,
 				1967C8DA19D462DA001E6656 /* configuration-dist.json in Resources */,
+				1967C96819D5E49C001E6656 /* dot.png in Resources */,
 				1991A9D319D40B64002C648A /* LaunchScreen.xib in Resources */,
 				1967C89D19D4360C001E6656 /* SPConfirmationDialog.xib in Resources */,
+				1967C96019D5E181001E6656 /* SPLoadingView.xib in Resources */,
 				1967C8DC19D462DA001E6656 /* configuration-test.json in Resources */,
 				1967C8D919D462DA001E6656 /* configuration-dev.json in Resources */,
 				1967C8E119D4630A001E6656 /* SPLocalizable-de_DE.plist in Resources */,
@@ -1084,6 +1144,7 @@
 				1991A9D019D40B64002C648A /* Images.xcassets in Resources */,
 				1967C8E219D4630A001E6656 /* SPLocalizable-en_US.plist in Resources */,
 				1967C8E319D4630A001E6656 /* SPLocalizable-tr_TR.plist in Resources */,
+				1967C96919D5E49C001E6656 /* dot@2x.png in Resources */,
 				1967C92819D5B9D1001E6656 /* SPOfferCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1131,6 +1192,7 @@
 				1967C8FF19D59CB8001E6656 /* SPOffer.m in Sources */,
 				1967C87919D43203001E6656 /* SPMobileAPIAdapter.m in Sources */,
 				1967C8D019D44EA8001E6656 /* OpenUDID.m in Sources */,
+				1967C95F19D5E181001E6656 /* SPLoadingView.m in Sources */,
 				1991AA8219D40BF3002C648A /* SPCloseButton.m in Sources */,
 				1991AA7C19D40BF3002C648A /* SPBaseNetwork.m in Sources */,
 				1967C8A719D436AB001E6656 /* UIColor+SPAdditions.m in Sources */,

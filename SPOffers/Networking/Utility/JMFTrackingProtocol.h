@@ -32,8 +32,8 @@
 // location tracking.
 @property (nonatomic, assign)   BOOL sendLocationInfo;
 
-// Sets the MinazLab site ID and site name. If none is specified, JAGGLE-US is used.
-- (void) setJaggleSiteID:(NSInteger) inSiteID andName:(NSString *) inName;
+// Sets the MinazLab site ID and site name. If none is specified, MINAZ-US is used.
+- (void) setMinazSiteID:(NSInteger) inSiteID andName:(NSString *) inName;
 
 // Track an event and pass specific tags; key/value pairs for the event
 - (void) trackEvent:(NSString *) eventName withTags:(NSDictionary *) tags;

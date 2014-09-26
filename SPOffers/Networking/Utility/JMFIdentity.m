@@ -1,5 +1,5 @@
 //
-//  JaggleIdentity.m
+//  MinazIdentity.m
 //  SPOffers
 //
 //  Created by Mihriban Minaz on 25/09/14.
@@ -31,7 +31,7 @@
 #else
 #endif
 
-#define JAGGLE_IDENTITY_AVOID_DEPRECATED_UDID 1
+#define MINAZ_IDENTITY_AVOID_DEPRECATED_UDID 1
 
 // derived from openssl rand -rand /dev/random -hex 32
 
@@ -42,28 +42,28 @@ static const char key_hmac[] = {0x87,0x57,0xc7,0x84,0x28,0x7e,0x1b,0x30,0x62,0x3
 
 typedef enum
 {
-	JaggleIdentityDeviceTypeUnknown = 0,
-	JaggleIdentityDeviceTypePhone,	// iPhone, Android phone
-	JaggleIdentityDeviceTypeMID,		// "Mobile Internet Device" -- iPod touch, other small non-phone devices
-	JaggleIdentityDeviceTypeTablet,	// iPad, Galaxy Tab, etc
-	JaggleIdentityDeviceTypeComputer,	// desktops, laptops
+	MinazIdentityDeviceTypeUnknown = 0,
+	MinazIdentityDeviceTypePhone,	// iPhone, Android phone
+	MinazIdentityDeviceTypeMID,		// "Mobile Internet Device" -- iPod touch, other small non-phone devices
+	MinazIdentityDeviceTypeTablet,	// iPad, Galaxy Tab, etc
+	MinazIdentityDeviceTypeComputer,	// desktops, laptops
 		
-} JaggleIdentityDeviceType;
+} MinazIdentityDeviceType;
 
 typedef enum
 {
-	JaggleIdentityDeviceOSUnknown = 0,
-	JaggleIdentityDeviceOSiOS,
-	JaggleIdentityDeviceOSAndroid,
-	JaggleIdentityDeviceOSBlackberry,
-	JaggleIdentityDeviceOSWindowsMobile,
+	MinazIdentityDeviceOSUnknown = 0,
+	MinazIdentityDeviceOSiOS,
+	MinazIdentityDeviceOSAndroid,
+	MinazIdentityDeviceOSBlackberry,
+	MinazIdentityDeviceOSWindowsMobile,
 		
-} JaggleIdentityDeviceOS;
+} MinazIdentityDeviceOS;
 
 #pragma pack(push)
 #pragma pack(1)		// get one byte alignment
 
-struct _PackedJaggleIdentity_v1
+struct _PackedMinazIdentity_v1
 {
 	UInt8	version;			// should be 1
 
@@ -71,9 +71,9 @@ struct _PackedJaggleIdentity_v1
 	
 // BEGIN encrypted portion, encrypted with AES-128 using key_crypt
 
-	UInt8	deviceType;			// must be a value from JaggleIdentityDeviceType, avoiding enum for packing
+	UInt8	deviceType;			// must be a value from MinazIdentityDeviceType, avoiding enum for packing
 	
-	UInt8	deviceOperatingSystem; // must be a value from JaggleIdentityDeviceOS
+	UInt8	deviceOperatingSystem; // must be a value from MinazIdentityDeviceOS
 	
 	// ISO 3166-1 alpha-2 country code: http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 	// best guess based on telephony or region settings
@@ -93,7 +93,7 @@ struct _PackedJaggleIdentity_v1
 	
 	// 128-bit unique identifier
 	// derived from hardware if possible
-	// otherwise copied from other Jaggle apps on device using keychain or pasteboard interchange
+	// otherwise copied from other Minaz apps on device using keychain or pasteboard interchange
 	// otherwise created at install time, and persisted
 	// 16 zero bytes if unknown
 	UInt8	uniqueIdentifier[16];
@@ -107,7 +107,7 @@ struct _PackedJaggleIdentity_v1
 	
 };
 
-typedef struct _PackedJaggleIdentity_v1 PackedJaggleIdentity_v1;
+typedef struct _PackedMinazIdentity_v1 PackedMinazIdentity_v1;
 
 #pragma pack(pop)
 
@@ -290,7 +290,7 @@ typedef struct _PackedJaggleIdentity_v1 PackedJaggleIdentity_v1;
 
 @synthesize device4PPFingerprintInternal;
 
-@synthesize jaggleCGUID;
+@synthesize minazCGUID;
 @synthesize hexCharacterSet;
 
 @synthesize internationalCallingCode;
@@ -335,7 +335,7 @@ typedef struct _PackedJaggleIdentity_v1 PackedJaggleIdentity_v1;
 	
 	//NSLog(@"GeneratedeviceID: %@",  [self generateDeviceID]);
 	
-#if !JAGGLE_IDENTITY_AVOID_DEPRECATED_UDID
+#if !MINAZ_IDENTITY_AVOID_DEPRECATED_UDID
 	UIDevice *currentDevice = [UIDevice currentDevice];
 	
 	SEL uniqueIdentifierSel = NSSelectorFromString(@"uniqueIdentifier");
@@ -380,7 +380,7 @@ typedef struct _PackedJaggleIdentity_v1 PackedJaggleIdentity_v1;
 static NSString *kIdentityInterchangeKeyVersion						= @"version";
 static NSString *kIdentityInterchangeKeyHardwareDeviceIdentifier	= @"hardwareDeviceIdentifier";
 static NSString *kIdentityInterchangeKeyInstallIdentifier			= @"applicationInstallIdentifier";
-static NSString *kIdentityInterchangeKeyJaggleCGUID					= @"jaggleCGUID";
+static NSString *kIdentityInterchangeKeyMinazCGUID					= @"minazCGUID";
 static NSString *kIdentityInterchangeKeyLastUpdatedBy				= @"lastUpdatedBy";
 static NSString *kIdentityInterchangeKeyLastUpdatedByVersion		= @"lastUpdatedByVersion";
 static NSString *kIdentityInterchangeKeyLastUpdatedTime				= @"lastUpdatedTime";
@@ -428,10 +428,10 @@ static NSString *kIdentityInterchangeKeyLastUpdatedTime				= @"lastUpdatedTime";
 		self.applicationInstallIdentifierInternal = installIdentifierIn;
 	}
 	
-	NSString *jaggleCGUIDIn = [identity objectForKey:kIdentityInterchangeKeyJaggleCGUID];
-	if (jaggleCGUIDIn)
+	NSString *minazCGUIDIn = [identity objectForKey:kIdentityInterchangeKeyMinazCGUID];
+	if (minazCGUIDIn)
 	{
-		self.jaggleCGUID = jaggleCGUIDIn;
+		self.minazCGUID = minazCGUIDIn;
 	}
 	
 #if defined (INTERNAL_BUILD) || defined (DEBUG) || defined (PRODUCTION_BUILD_LOGGING)
@@ -479,8 +479,8 @@ static NSString *kIdentityInterchangeKeyLastUpdatedTime				= @"lastUpdatedTime";
 	if ([self applicationInstallIdentifierIsValid])
 		[identityDictionary setObject:self.applicationInstallIdentifierInternal forKey:kIdentityInterchangeKeyInstallIdentifier];	
 
-	if (self.jaggleCGUID)
-		[identityDictionary setObject:self.jaggleCGUID forKey:kIdentityInterchangeKeyJaggleCGUID];
+	if (self.minazCGUID)
+		[identityDictionary setObject:self.minazCGUID forKey:kIdentityInterchangeKeyMinazCGUID];
 
 	if (self.applicationBundleIdentifier)
 		[identityDictionary setObject:self.applicationBundleIdentifier forKey:kIdentityInterchangeKeyLastUpdatedBy];	
@@ -496,7 +496,7 @@ static NSString *kIdentityInterchangeKeyLastUpdatedTime				= @"lastUpdatedTime";
 	{
 		[JMFIdentityKeychainUtilities setString:base64IdentityPackage];
         
-		UIPasteboard *pasteboard = [UIPasteboard pasteboardWithName:@"com.jaggle.identity" create:YES];
+		UIPasteboard *pasteboard = [UIPasteboard pasteboardWithName:@"com.minaz.identity" create:YES];
 		pasteboard.persistent = YES;
 		[pasteboard setString:base64IdentityPackage];
 	}
@@ -642,7 +642,7 @@ static NSString *kIdentityInterchangeKeyLastUpdatedTime				= @"lastUpdatedTime";
 
 - (void) setup4PPFingerprint
 {	
-	PackedJaggleIdentity_v1 identity = {};
+	PackedMinazIdentity_v1 identity = {};
 
 	// populate data
 	memset(&identity, 0, sizeof(identity));
@@ -657,15 +657,15 @@ static NSString *kIdentityInterchangeKeyLastUpdatedTime				= @"lastUpdatedTime";
 	NSString *model = [currentDevice model];
 	
 	if ([model hasPrefix:@"iPhone"])
-		identity.deviceType = JaggleIdentityDeviceTypePhone;
+		identity.deviceType = MinazIdentityDeviceTypePhone;
 	else if ([model hasPrefix:@"iPod"])
-		identity.deviceType = JaggleIdentityDeviceTypeMID;
+		identity.deviceType = MinazIdentityDeviceTypeMID;
 	else if ([model hasPrefix:@"iPad"])
-		identity.deviceType = JaggleIdentityDeviceTypeTablet;
+		identity.deviceType = MinazIdentityDeviceTypeTablet;
 	else
-		identity.deviceType = JaggleIdentityDeviceTypeUnknown;
+		identity.deviceType = MinazIdentityDeviceTypeUnknown;
 	
-	identity.deviceOperatingSystem = JaggleIdentityDeviceOSiOS;
+	identity.deviceOperatingSystem = MinazIdentityDeviceOSiOS;
 	
 #if !IDENTITY_DISABLE_TELEPHONY
 	CTCarrier *carrier = self.telephonyNetworkInfo.subscriberCellularProvider;
@@ -723,14 +723,14 @@ static NSString *kIdentityInterchangeKeyLastUpdatedTime				= @"lastUpdatedTime";
 	}
 
 	const void *hmacData = &identity;
-	const size_t hmacDataLength = (size_t) offsetof(PackedJaggleIdentity_v1, hmac);
+	const size_t hmacDataLength = (size_t) offsetof(PackedMinazIdentity_v1, hmac);
 	
 	CCHmac(kCCHmacAlgSHA1, key_hmac, sizeof(key_hmac), hmacData, hmacDataLength, identity.hmac);
 		
 	// encrypt the encrypted portion
 	
-	void *encryptData = ((void *)&identity) + offsetof(PackedJaggleIdentity_v1, deviceType);
-	const size_t encryptLength = sizeof(PackedJaggleIdentity_v1)-offsetof(PackedJaggleIdentity_v1, deviceType);
+	void *encryptData = ((void *)&identity) + offsetof(PackedMinazIdentity_v1, deviceType);
+	const size_t encryptLength = sizeof(PackedMinazIdentity_v1)-offsetof(PackedMinazIdentity_v1, deviceType);
 	
 	size_t dataOutMoved = 0;
 	
@@ -750,7 +750,7 @@ static NSString *kIdentityInterchangeKeyLastUpdatedTime				= @"lastUpdatedTime";
 - (NSString *) create3PPFingerprintFromDeviceIdentifier:(NSString *) uniqueIdentifier
 {
 	NSMutableString *identifier = [NSMutableString string];
-	[identifier appendString:@"http://iphone.jaggle.com/"];
+	[identifier appendString:@"http://iphone.minaz.com/"];
 	
 	if (uniqueIdentifier)
 	{

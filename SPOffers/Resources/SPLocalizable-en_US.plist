@@ -23,11 +23,11 @@
 	<key>AppPermissionDenied</key>
 	<string>Your location cannot be found. Make sure your Location Services are turned on.</string>
 	<key>EnableAppLocationMessage</key>
-	<string>Please change the settings of your device and enable Location Services for Invitans.</string>
+	<string>Please change the settings of your device and enable Location Services for SPOffers.</string>
 	<key>LocationServicesDisabled</key>
 	<string>Location Services Are Disabled</string>
 	<key>EnableLocationMessage</key>
-	<string>Please change the settings of your device and enable Location Services for Invitans.</string>
+	<string>Please change the settings of your device and enable Location Services for SPOffers.</string>
 	<key>NETWORK_ERROR</key>
 	<string>Network Error</string>
 	<key>Cellular</key>

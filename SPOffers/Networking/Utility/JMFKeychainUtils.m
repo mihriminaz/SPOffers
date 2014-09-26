@@ -9,7 +9,7 @@
 #import "JMFKeychainUtils.h"
 
 @implementation JMFKeychainUtils
-#define kServiceName @"com.jaggle.keychain_service"
+#define kServiceName @"com.minaz.keychain_service"
 
 +(NSMutableDictionary *)newSearchDictionary:(NSString *)identifier
 {

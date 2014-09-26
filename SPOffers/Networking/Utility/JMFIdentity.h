@@ -1,5 +1,5 @@
 //
-//  JaggleIdentity.h
+//  MinazIdentity.h
 //  SPOffers
 //
 //  Created by Mihriban Minaz on 25/09/14.
@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 
 #ifndef kIdentityInterchangeIdentifier
-#define kIdentityInterchangeIdentifier @"com.jaggle.identity"
+#define kIdentityInterchangeIdentifier @"com.minaz.identity"
 #endif
 
 #ifndef kIdentityInterchangeKeychainUser
-#define kIdentityInterchangeKeychainUser @"jaggle"
+#define kIdentityInterchangeKeychainUser @"minaz"
 #endif
 
 @interface JMFIdentity : NSObject
@@ -23,7 +23,7 @@
 @property (readonly) NSString *device4PPFingerprint;
 @property (readonly) NSString *trackingUUID;
 
-@property (copy) NSString *jaggleCGUID;
+@property (copy) NSString *minazCGUID;
 
 @property (copy) NSString *internationalCallingCode;
 

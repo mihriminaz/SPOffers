@@ -9,9 +9,12 @@
 #import "AppDelegate.h"
 #import "SponsorPaySDK.h"
 #import "SPConfiguration.h"
+#import "SPLoadingView.h"
 
 @interface AppDelegate ()<JMFModuleManagerDelegate>
 @property (readwrite, strong) SPMobileAPIAdapter *apiAdapter;
+@property (nonatomic, strong) SPLoadingView *loadingView;
+@property (nonatomic, strong) UIViewController *theAssignedVC;
 
 @end
 
@@ -135,4 +138,38 @@
     }
 }
 
+
+#pragma mark Progress Animation
+
+- (void)startProgressAnimationTitle:(NSString *)animationTitle withAssignedVC:(UIViewController*)assignedVC {
+    
+    DebugLog(@"letsstart");
+    if(self.loadingView == nil){
+        self.loadingView = [SPLoadingView showInView:self.window withLoadingText:animationTitle animated:YES];
+    }  else {
+        [self.loadingView setFrame:self.window.frame];
+        [self.loadingView showInView:self.window withLoadingText:animationTitle animated:YES];
+    }
+    
+    [self.loadingView setSecure:NO];
+    if (assignedVC==nil) {
+        self.theAssignedVC=(UIViewController*)[UIApplication sharedApplication].keyWindow.rootViewController;
+    }
+    else {
+        self.theAssignedVC = assignedVC;
+    }
+
+    [[[AppDelegate appDelegate] window] addSubview:self.loadingView];
+    [[[AppDelegate appDelegate] window] bringSubviewToFront:self.loadingView];
+}
+
+
+-(void)stopProgressAnimation:(BOOL)animated {
+    DebugLog(@"letsstop");
+    
+    if(self.loadingView != nil){
+        [self.loadingView dismissAnimated:animated];
+    }
+}
+#pragma mark -Progress Animation
 @end

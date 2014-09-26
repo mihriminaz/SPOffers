@@ -142,10 +142,10 @@
     
     //hashkey
 
-    
-    
+    [[AppDelegate appDelegate] startProgressAnimationTitle:@"SENDING" withAssignedVC:self];
     [api sendForm:aDict withHandler:^(SPOfferResponse *theResponse, NSError *error) {
-  
+        
+        [[AppDelegate appDelegate] stopProgressAnimation:YES];
         if (error != nil)
         {
             DebugLog(@"we have errors  %@", error);

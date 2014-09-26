@@ -14,7 +14,8 @@
 @property (readonly, strong) SPMobileAPIAdapter *apiAdapter;
 
 + (AppDelegate *)appDelegate;
-
+- (void)startProgressAnimationTitle:(NSString *)animationTitle withAssignedVC:(UIViewController*)assignedVC;
+-(void)stopProgressAnimation:(BOOL)animated;
 - (void)handleNetworkError:(NSError *)error;
 @end
 
