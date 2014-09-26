@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 MinazLab. All rights reserved.
 //
 
+@class SPOfferResponse;
 @interface SPMobileAPIAdapter : NSObject
 
 //USER WEBSERVICES
@@ -13,6 +14,6 @@
 
 + (NSString *)errorDomain;
 
-- (void)sendForm:(NSDictionary *)formDict withHandler:(void (^)(NSError *error))handler;
+- (void)sendForm:(NSDictionary *)formDict withHandler:(void (^)(SPOfferResponse *theResponse, NSError *error))handler;
 @end
 

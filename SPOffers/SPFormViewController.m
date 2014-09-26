@@ -11,12 +11,14 @@
 #import "SPMobileAPIAdapter.h"
 #import "OpenUDID.h"
 #import <AdSupport/ASIdentifierManager.h>
+#import "SPOfferListViewController.h"
 
 @interface SPFormViewController ()
 @property (nonatomic, strong) IBOutlet UITextField *userIdTF;
 @property (nonatomic, strong) IBOutlet UITextField *appIdTF;
 @property (nonatomic, strong) IBOutlet UITextField *apiKeyTF;
 @property (nonatomic, strong) IBOutlet UITextField *pubOTF;
+@property (nonatomic, strong) IBOutlet UIButton *offerListOpenBtn;
 
 @end
 
@@ -24,13 +26,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = SPLocalizedString(@"Offer Form", @"Offer Form");
+    
     if (DEBUG) {
-        [self.userIdTF setText:@"spiderman"];
-        [self.appIdTF setText:@"2070"];
-        [self.apiKeyTF setText:@"1c915e3b5d42d05136185030892fbb846c278927"];
-        [self.pubOTF setText:@"spiderman"];
+        [self.userIdTF setText:@"spiderman"];//player1
+        [self.appIdTF setText:@"2070"];//157
+        [self.apiKeyTF setText:@"1c915e3b5d42d05136185030892fbb846c278927"];//e95a21621a1865bcbae3bee89c4d4f84
+        [self.pubOTF setText:@"campaign2"];
     }
+    [self.view addTapGestureRecognizerWithTarget:self selector:@selector(dismissKeyboardView) withDelegate:self];
+}
+
+-(void)dismissKeyboardView {
+    [self.userIdTF resignFirstResponder];
+    [self.appIdTF resignFirstResponder];
+    [self.apiKeyTF resignFirstResponder];
+    [self.pubOTF resignFirstResponder];
 }
 
 
@@ -77,12 +88,14 @@
     if ([self.userIdTF.text length]>0) {
     [aDict setObject:self.userIdTF.text forKey:@"uid"];
     }
-    [aDict setObject:self.apiKeyTF.text forKey:@"apiKey"];
+   // [aDict setObject:self.apiKeyTF.text forKey:@"apikey"];
         
     if ([self.pubOTF.text length]>0) {
     [aDict setObject:self.pubOTF.text forKey:@"pub0"];
     }
-    
+        
+       // [aDict setObject:@"2" forKey:@"page"];
+        //[aDict setObject:@"1312211903" forKey:@"ps_time"];
     [aDict setObject:[JMFUtilities uniqueDeviceID] forKey:@"device_id"];
     [aDict setObject:[[NSLocale currentLocale] localeIdentifier] forKey:@"locale"];
     [aDict setObject:[[SPUtility sharedUtility] getIPAddress] forKey:@"ip"];
@@ -92,7 +105,7 @@
     
     
     
-    if ([ASIdentifierManager sharedManager].advertisingTrackingEnabled ==YES) {
+  /*  if ([ASIdentifierManager sharedManager].advertisingTrackingEnabled ==YES) {
         [aDict setObject:[[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString] forKey:@"apple_idfa"];
         [aDict setObject:@"true" forKey:@"apple_idfa_tracking_enabled"];
     }
@@ -102,6 +115,7 @@
     
     [aDict setObject:[OpenUDID value] forKey:@"openudid"];
     [aDict setObject:@"phone" forKey:@"device"];
+    */
     //format json
     //appid
     //uid
@@ -129,14 +143,20 @@
 
     
     
-    [api sendForm:aDict withHandler:^(NSError *error) {
+    [api sendForm:aDict withHandler:^(SPOfferResponse *theResponse, NSError *error) {
+  
         if (error != nil)
         {
-            DebugLog(@"SPCreateConversationViewController  %@", error);
+            DebugLog(@"we have errors  %@", error);
         }
         else
         {
-            DebugLog(@"createdMessage  ");
+            DebugLog(@"no errors  ");
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:
+                                        @"Main" bundle:[NSBundle mainBundle]];
+            UIViewController *myController = [storyboard instantiateViewControllerWithIdentifier:@"SPOfferListViewController"];
+            [(SPOfferListViewController*)myController setOfferResponse:theResponse];
+            [self.navigationController pushViewController:myController animated:YES];
             
         }
         }];

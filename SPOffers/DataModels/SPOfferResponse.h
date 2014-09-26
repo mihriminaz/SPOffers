@@ -12,7 +12,7 @@
 @interface SPOfferResponse : NSObject
 
 @property (nonatomic, strong)  SPOfferInformation *information;
-@property (nonatomic, assign)  NSArray *offers;//SPOffers
+@property (nonatomic, strong)  NSArray *offers;//SPOffers
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 - (NSMutableDictionary *)convertToJSON;

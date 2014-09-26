@@ -51,7 +51,7 @@
 	return self;
 }
 
-- (void)sendForm:(NSDictionary *)formDict withHandler:(void (^)(NSError *error))handler{
+- (void)sendForm:(NSDictionary *)formDict withHandler:(void (^)(SPOfferResponse *theResponse, NSError *error))handler{
     
     SPSendFormRequest *request = [[SPSendFormRequest alloc] initWithFormDict:formDict];
     NSString *requestIdentifier = @"SPSendFormResponse";
@@ -59,7 +59,7 @@
                                            withID:requestIdentifier
                                       withHandler:^(SPSendFormResponse *response) {
                                           if (handler)
-                                              handler( [SPMobileAPIAdapter errorWithResponse:response]);
+                                              handler(response.offerResponse, [SPMobileAPIAdapter errorWithResponse:response]);
                                       }];
     
 }
@@ -99,9 +99,11 @@
                 else{
                     errorMessage=inResponse.message;
                 }
-                    
+                if([errorMessage length]>0){
                 [dict setObject:errorMessage forKey:NSLocalizedFailureReasonErrorKey];
+               
                 error = [NSError errorWithDomain:[SPMobileAPIAdapter errorDomain] code:[inResponse.code integerValue] userInfo:dict];
+                     }
             
             }
             else{
