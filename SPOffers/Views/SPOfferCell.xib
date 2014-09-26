@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="OfferCell" selectionStyle="blue" indentationWidth="0.0" reuseIdentifier="OfferCell" id="2" customClass="SPOfferCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="infinite" tableViewCell="2" id="6WZ-bV-pUT">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KYn-9G-A7E">
+                        <rect key="frame" x="4" y="8" width="60" height="60"/>
+                        <color key="backgroundColor" red="0.84708599452554745" green="0.69754628697990761" blue="0.64442184847872275" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Sbr-ST-0fU"/>
+                            <constraint firstAttribute="width" constant="60" id="gCN-Ak-itb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOz-Qf-znd">
+                        <rect key="frame" x="72" y="8" width="37.5" height="19.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDT-Xe-Fce">
+                        <rect key="frame" x="72" y="29.5" width="38" height="20.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbQ-Ch-0n6">
+                        <rect key="frame" x="72" y="53" width="38" height="20.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AbQ-Ch-0n6" firstAttribute="top" secondItem="hDT-Xe-Fce" secondAttribute="bottom" constant="3" id="4J1-yI-C8u"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="AbQ-Ch-0n6" secondAttribute="trailing" constant="10" id="7Ks-Oc-bgX"/>
+                    <constraint firstItem="hDT-Xe-Fce" firstAttribute="top" secondItem="FOz-Qf-znd" secondAttribute="bottom" constant="2" id="7eU-Fh-Qjw"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="FOz-Qf-znd" secondAttribute="trailing" constant="10" id="CPQ-cv-Tgt"/>
+                    <constraint firstItem="FOz-Qf-znd" firstAttribute="leading" secondItem="KYn-9G-A7E" secondAttribute="trailing" constant="8" id="Gmr-Qs-ktv"/>
+                    <constraint firstItem="AbQ-Ch-0n6" firstAttribute="leading" secondItem="KYn-9G-A7E" secondAttribute="trailing" constant="8" id="Qe7-YU-crQ"/>
+                    <constraint firstItem="hDT-Xe-Fce" firstAttribute="leading" secondItem="KYn-9G-A7E" secondAttribute="trailing" constant="8" id="dQp-1I-aCw"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="AbQ-Ch-0n6" secondAttribute="bottom" constant="1" id="rVg-nn-P6m"/>
+                    <constraint firstItem="KYn-9G-A7E" firstAttribute="leading" secondItem="6WZ-bV-pUT" secondAttribute="leadingMargin" constant="-4" id="tGu-3S-86D"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="hDT-Xe-Fce" secondAttribute="trailing" constant="10" id="uD9-Pu-MT2"/>
+                    <constraint firstItem="KYn-9G-A7E" firstAttribute="top" secondItem="6WZ-bV-pUT" secondAttribute="topMargin" id="yDC-2c-U8i"/>
+                    <constraint firstItem="FOz-Qf-znd" firstAttribute="top" secondItem="6WZ-bV-pUT" secondAttribute="topMargin" id="ydC-GN-3Ey"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="payoutLabel" destination="AbQ-Ch-0n6" id="OFX-KK-WO5"/>
+                <outlet property="teaserLabel" destination="hDT-Xe-Fce" id="3eK-nM-7Uo"/>
+                <outlet property="thumbnailImageView" destination="KYn-9G-A7E" id="E0z-EH-wGo"/>
+                <outlet property="titleLabel" destination="FOz-Qf-znd" id="pZI-8u-Lwc"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
