@@ -55,9 +55,9 @@
 		1967C8DA19D462DA001E6656 /* configuration-dist.json in Resources */ = {isa = PBXBuildFile; fileRef = 1967C8D619D462DA001E6656 /* configuration-dist.json */; };
 		1967C8DB19D462DA001E6656 /* configuration-rel.json in Resources */ = {isa = PBXBuildFile; fileRef = 1967C8D719D462DA001E6656 /* configuration-rel.json */; };
 		1967C8DC19D462DA001E6656 /* configuration-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 1967C8D819D462DA001E6656 /* configuration-test.json */; };
-		1967C8E119D4630A001E6656 /* INVLocalizable-de_DE.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1967C8DE19D4630A001E6656 /* INVLocalizable-de_DE.plist */; };
-		1967C8E219D4630A001E6656 /* INVLocalizable-en_US.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1967C8DF19D4630A001E6656 /* INVLocalizable-en_US.plist */; };
-		1967C8E319D4630A001E6656 /* INVLocalizable-tr_TR.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1967C8E019D4630A001E6656 /* INVLocalizable-tr_TR.plist */; };
+		1967C8E119D4630A001E6656 /* SPLocalizable-de_DE.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1967C8DE19D4630A001E6656 /* SPLocalizable-de_DE.plist */; };
+		1967C8E219D4630A001E6656 /* SPLocalizable-en_US.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1967C8DF19D4630A001E6656 /* SPLocalizable-en_US.plist */; };
+		1967C8E319D4630A001E6656 /* SPLocalizable-tr_TR.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1967C8E019D4630A001E6656 /* SPLocalizable-tr_TR.plist */; };
 		1967C8E619D46857001E6656 /* NSDictionary+SPSortAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C8E519D46857001E6656 /* NSDictionary+SPSortAddition.m */; };
 		1967C8E919D57D40001E6656 /* NSString+Hashes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C8E819D57D40001E6656 /* NSString+Hashes.m */; };
 		1967C8F119D59228001E6656 /* SPOfferResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C8F019D59228001E6656 /* SPOfferResponse.m */; };
@@ -264,9 +264,9 @@
 		1967C8D619D462DA001E6656 /* configuration-dist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "configuration-dist.json"; sourceTree = "<group>"; };
 		1967C8D719D462DA001E6656 /* configuration-rel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "configuration-rel.json"; sourceTree = "<group>"; };
 		1967C8D819D462DA001E6656 /* configuration-test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "configuration-test.json"; sourceTree = "<group>"; };
-		1967C8DE19D4630A001E6656 /* INVLocalizable-de_DE.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "INVLocalizable-de_DE.plist"; sourceTree = "<group>"; };
-		1967C8DF19D4630A001E6656 /* INVLocalizable-en_US.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "INVLocalizable-en_US.plist"; sourceTree = "<group>"; };
-		1967C8E019D4630A001E6656 /* INVLocalizable-tr_TR.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "INVLocalizable-tr_TR.plist"; sourceTree = "<group>"; };
+		1967C8DE19D4630A001E6656 /* SPLocalizable-de_DE.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SPLocalizable-de_DE.plist"; sourceTree = "<group>"; };
+		1967C8DF19D4630A001E6656 /* SPLocalizable-en_US.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SPLocalizable-en_US.plist"; sourceTree = "<group>"; };
+		1967C8E019D4630A001E6656 /* SPLocalizable-tr_TR.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SPLocalizable-tr_TR.plist"; sourceTree = "<group>"; };
 		1967C8E419D46857001E6656 /* NSDictionary+SPSortAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SPSortAddition.h"; sourceTree = "<group>"; };
 		1967C8E519D46857001E6656 /* NSDictionary+SPSortAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SPSortAddition.m"; sourceTree = "<group>"; };
 		1967C8E719D57D40001E6656 /* NSString+Hashes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hashes.h"; sourceTree = "<group>"; };
@@ -695,9 +695,9 @@
 				1967C8D619D462DA001E6656 /* configuration-dist.json */,
 				1967C8D719D462DA001E6656 /* configuration-rel.json */,
 				1967C8D819D462DA001E6656 /* configuration-test.json */,
-				1967C8DE19D4630A001E6656 /* INVLocalizable-de_DE.plist */,
-				1967C8DF19D4630A001E6656 /* INVLocalizable-en_US.plist */,
-				1967C8E019D4630A001E6656 /* INVLocalizable-tr_TR.plist */,
+				1967C8DE19D4630A001E6656 /* SPLocalizable-de_DE.plist */,
+				1967C8DF19D4630A001E6656 /* SPLocalizable-en_US.plist */,
+				1967C8E019D4630A001E6656 /* SPLocalizable-tr_TR.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1079,11 +1079,11 @@
 				1967C89D19D4360C001E6656 /* SPConfirmationDialog.xib in Resources */,
 				1967C8DC19D462DA001E6656 /* configuration-test.json in Resources */,
 				1967C8D919D462DA001E6656 /* configuration-dev.json in Resources */,
-				1967C8E119D4630A001E6656 /* INVLocalizable-de_DE.plist in Resources */,
+				1967C8E119D4630A001E6656 /* SPLocalizable-de_DE.plist in Resources */,
 				1967C8DB19D462DA001E6656 /* configuration-rel.json in Resources */,
 				1991A9D019D40B64002C648A /* Images.xcassets in Resources */,
-				1967C8E219D4630A001E6656 /* INVLocalizable-en_US.plist in Resources */,
-				1967C8E319D4630A001E6656 /* INVLocalizable-tr_TR.plist in Resources */,
+				1967C8E219D4630A001E6656 /* SPLocalizable-en_US.plist in Resources */,
+				1967C8E319D4630A001E6656 /* SPLocalizable-tr_TR.plist in Resources */,
 				1967C92819D5B9D1001E6656 /* SPOfferCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

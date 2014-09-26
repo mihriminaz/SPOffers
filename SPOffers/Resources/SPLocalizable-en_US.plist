@@ -3,89 +3,89 @@
 <plist version="1.0">
 <dict>
 	<key>NOT_ENABLED</key>
-	<string>Nicht aktiv</string>
+	<string>Not Enabled</string>
 	<key>OK</key>
 	<string>OK</string>
 	<key>Cancel</key>
-	<string>Abbrechen</string>
+	<string>Cancel</string>
 	<key>Yes</key>
-	<string>Ja</string>
+	<string>Yes</string>
 	<key>No</key>
-	<string>Nein</string>
+	<string>No</string>
 	<key>YES</key>
-	<string>JA</string>
+	<string>YES</string>
 	<key>NO</key>
-	<string>NEIN</string>
+	<string>NO</string>
 	<key>Next&gt;&gt;</key>
-	<string>Weiter &gt;&gt;</string>
+	<string>Next &gt;&gt;</string>
 	<key>Error</key>
-	<string>Fehler</string>
+	<string>Error</string>
 	<key>AppPermissionDenied</key>
-	<string>Wir finden dich nicht. Bist du sicher dass der Ortungsdienst für Invitans eingeschaltet ist?</string>
+	<string>Your location cannot be found. Make sure your Location Services are turned on.</string>
 	<key>EnableAppLocationMessage</key>
-	<string>Bitte änderen Sie ihre Geräteeänstellung, aktivieren Sie den Ortungsdienst für Invitans.</string>
+	<string>Please change the settings of your device and enable Location Services for Invitans.</string>
 	<key>LocationServicesDisabled</key>
-	<string>Ortungsdienste ausgeschaltet</string>
+	<string>Location Services Are Disabled</string>
 	<key>EnableLocationMessage</key>
-	<string>Bitte änderen Sie ihre Geräteeänstellung, aktivieren Sie den Ortungsdienst für Invitans.</string>
+	<string>Please change the settings of your device and enable Location Services for Invitans.</string>
 	<key>NETWORK_ERROR</key>
-	<string>NETZWERKFEHLER</string>
+	<string>Network Error</string>
 	<key>Cellular</key>
-	<string>Zellular</string>
+	<string>Cellular</string>
 	<key>Wifi</key>
-	<string>WLAN</string>
+	<string>Wifi</string>
 	<key>No_Connection</key>
-	<string>Keine Verbindung</string>
+	<string>No Connection</string>
 	<key>Loading…</key>
-	<string>Laden…</string>
+	<string>Loading…</string>
 	<key>keyboardOK</key>
 	<string>OK</string>
 	<key>keyboardPrevious</key>
-	<string>Vorher</string>
+	<string>Pre</string>
 	<key>keyboardNext</key>
-	<string>Nachher</string>
+	<string>Next</string>
 	<key>DONE</key>
-	<string>OK</string>
+	<string>DONE</string>
 	<key>CANCEL</key>
-	<string>ABBRECHEN</string>
+	<string>CANCEL</string>
 	<key>MANDATORYFIELDS</key>
-	<string>Bitte Ausfüllen:</string>
+	<string>YOU CAN&apos;T LEAVE THESE EMPTY:</string>
 	<key>AlertInfo</key>
 	<string>Info</string>
 	<key>ALERTINFO</key>
 	<string>INFO</string>
 	<key>DONE_BUTTON_TITLE</key>
-	<string>Ok</string>
+	<string>DONE</string>
 	<key>Version</key>
 	<string>Version</string>
 	<key>LOADING</key>
-	<string>WIRD GELADEN</string>
+	<string>LOADING</string>
 	<key>WAITING</key>
-	<string>WARTEN</string>
+	<string>WAITING</string>
 	<key>SENDING</key>
-	<string>SENDET</string>
+	<string>SENDING</string>
 	<key>Warning</key>
-	<string>Warnung</string>
+	<string>Warning</string>
 	<key>Later</key>
-	<string>Später</string>
+	<string>Later</string>
 	<key>WRONGDATA</key>
-	<string>FALSCHE ANGABEN</string>
+	<string>WRONG DATA</string>
 	<key>Done</key>
-	<string>Benutzen</string>
+	<string>Done</string>
 	<key>Success!</key>
-	<string>Erfolgreich!</string>
+	<string>Success!</string>
 	<key>Success</key>
-	<string>Erfolgreich</string>
+	<string>Success</string>
 	<key>Waiting</key>
-	<string>Warten</string>
+	<string>Waiting</string>
 	<key>Info</key>
 	<string>Info</string>
 	<key>INFO</key>
 	<string>INFO</string>
 	<key>SEND</key>
-	<string>SENDEN</string>
+	<string>SEND</string>
 	<key>Send</key>
-	<string>Senden</string>
+	<string>Send</string>
 	<key>Parameter Error</key>
 	<string>Parameter Error</string>
 	<key>Illegal parameter supplied to encryption/decryption algorithm</key>
@@ -113,20 +113,30 @@
 	<key>Unknown Error</key>
 	<string>Unknown Error</string>
 	<key>CANCELLINGREQUEST</key>
-	<string>ANFRAGE WIRD ZURÜCKGEZOGEN</string>
+	<string>CANCELLING REQUEST</string>
+	<key>TheInternetconnectionappearstobeoffline</key>
+	<string>The Internet connection appears to be offline. Please check your Wi-Fi/Cellular settings.</string>
 	<key>ConnectionProblem</key>
-	<string>Verbindungsfehler</string>
+	<string>Connection Problem</string>
 	<key>Next</key>
-	<string>Weiter</string>
+	<string>Next</string>
 	<key>Skip</key>
-	<string>Überspringen</string>
-	<key>AppId</key>
-	<string>AppId</string>
-	<key>UserId</key>
-	<string>UserId</string>
-	<key>ApiKey</key>
-	<string>API KEY</string>
-	<key>Pub0</key>
-	<string>pub0</string>
+	<string>Skip</string>
+    <key>AppId</key>
+    <string>AppId</string>
+    <key>UserId</key>
+    <string>UserId</string>
+    <key>ApiKey</key>
+    <string>API KEY</string>
+    <key>Pub0</key>
+    <string>pub0</string>
+    <key>NO_OFFER</key>
+    <string>NO OFFER</string>
+    <key>Thereisnooffernowtrylater</key>
+    <string>There is no offer now try later or try with other parameters.</string>
+    <key>OfferForm</key>
+    <string>Offer Form</string>
+    <key>Offers</key>
+    <string>Offers</string>
 </dict>
 </plist>

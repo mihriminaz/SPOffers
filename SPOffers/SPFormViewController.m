@@ -12,6 +12,7 @@
 #import "OpenUDID.h"
 #import <AdSupport/ASIdentifierManager.h>
 #import "SPOfferListViewController.h"
+#import "SPOfferResponse.h"
 
 @interface SPFormViewController ()
 @property (nonatomic, strong) IBOutlet UITextField *userIdTF;
@@ -26,7 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = SPLocalizedString(@"Offer Form", @"Offer Form");
+    self.title = SPLocalizedString(@"OfferForm", @"Offer Form");
     
     if (DEBUG) {
         [self.userIdTF setText:@"spiderman"];//player1
@@ -105,7 +106,7 @@
     
     
     
-  /*  if ([ASIdentifierManager sharedManager].advertisingTrackingEnabled ==YES) {
+    /*if ([ASIdentifierManager sharedManager].advertisingTrackingEnabled ==YES) {
         [aDict setObject:[[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString] forKey:@"apple_idfa"];
         [aDict setObject:@"true" forKey:@"apple_idfa_tracking_enabled"];
     }
@@ -148,16 +149,27 @@
         if (error != nil)
         {
             DebugLog(@"we have errors  %@", error);
+            
+            
+            [[SPAlertManager sharedManager] showAlertWithOnlyTitle:SPLocalizedString(@"NETWORK_ERROR", nil) message:[error localizedDescription]];
         }
         else
         {
             DebugLog(@"no errors  ");
+            if ([theResponse.offers count]>0) {
+             
             UIStoryboard *storyboard = [UIStoryboard storyboardWithName:
                                         @"Main" bundle:[NSBundle mainBundle]];
             UIViewController *myController = [storyboard instantiateViewControllerWithIdentifier:@"SPOfferListViewController"];
             [(SPOfferListViewController*)myController setOfferResponse:theResponse];
             [self.navigationController pushViewController:myController animated:YES];
-            
+            }
+            else {
+                
+                [[SPAlertManager sharedManager] showAlertWithOnlyTitle:SPLocalizedString(@"NO_OFFER", nil)
+                                                               message:SPLocalizedString(@"Thereisnooffernowtrylater", nil)
+                 ];
+            }
         }
         }];
      

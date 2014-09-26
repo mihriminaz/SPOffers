@@ -130,5 +130,13 @@
     <string>API KEY</string>
     <key>Pub0</key>
     <string>pub0</string>
+    <key>NO_OFFER</key>
+    <string>TEKLİF YOK</string>
+    <key>Thereisnooffernowtrylater</key>
+    <string>Şu anda teklif yok lütfen daha sonra tekrar deneyin ya da başka parametreler ile sorgulayın.</string>
+    <key>OfferForm</key>
+    <string>Teklif Arama</string>
+    <key>Offers</key>
+    <string>Teklifler</string>
 </dict>
 </plist>
