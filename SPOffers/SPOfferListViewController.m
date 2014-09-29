@@ -17,12 +17,8 @@
 
 @interface SPOfferListViewController ()<UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, strong) IBOutlet UITableView *offersTable;
 @property (nonatomic, strong) IBOutlet UIImageView *offerHiresImageView;
 @property (nonatomic, strong) IBOutlet UIView *offerDetailView;
-@property (nonatomic, strong) NSMutableArray *offerList;
-@property (nonatomic, assign) NSInteger pageNotificationCount;
-@property (nonatomic, assign) BOOL nothingToLoadMore;
 @property (nonatomic, strong) SPOfferResponse *theOfferResponse;
 
 @end
@@ -51,14 +47,12 @@
 {
     [super viewDidLoad];
     self.offersTable.delegate=self;
-    self.nothingToLoadMore=NO;
     [self.offerDetailView setHidden:YES];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     [self.offersTable registerNib:[UINib nibWithNibName:@"SPOfferCell" bundle:nil] forCellReuseIdentifier:[SPOfferCell cellID]];
     
-    //[self getNotificationsByPagination];
     if ([self.offerList count]>0) {
         [self.offersTable reloadData];
     }
@@ -79,74 +73,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void) getNotificationsByPagination {
-    self.nothingToLoadMore=NO;
-    self.pageNotificationCount = 1;
-    [self loadMoreNotificationsByPagination];
-}
-
-- (void) loadMoreNotificationsByPagination {
-    
-   /* if(self.nothingToLoadMore==NO){
-        INVMobileAPIAdapter *api = [INVAppDelegate appDelegate].apiAdapter;
-        INVNotificationsViewController *__weak weakSelf = self;
-        
-        if ((self.pageNotificationCount>1)||(self.firstTimeLoadAnimation==YES)){
-            [[INVAppDelegate appDelegate] startProgressAnimationTitle:INVLocalizedString(@"LOADING", @"LOADING") withAssignedVC:self];
-            self.firstTimeLoadAnimation=NO;
-        }
-        else {
-                self.notificationLastOpenTime = self.lastCallTime;
-        }
-        
-        [api getNotificationsWithPage:self.pageNotificationCount withHandler:^(NSArray *notificationList, NSError *error) {
-            [[INVAppDelegate appDelegate] stopProgressAnimation:YES];
-            
-            INVUnread *anUnread = [[INVUnread alloc] initWithDictionary:[[INVUserManager sharedManager].unreadCounts convertToJSON]];
-            anUnread.unreadNotificationsCount=@"0";
-            anUnread.notificationsLastOpenTime=[NSString stringWithFormat:@"%f", NSTimeIntervalSince1970];
-            [INVUserManager sharedManager].unreadCounts=anUnread;
-            
-            if (error != nil)
-            {
-            }
-            else
-            {
-                
-                if ([INVUserManager sharedManager].unreadCounts!=nil) {
-                    self.lastCallTime=[[NSDate date] timeIntervalSince1970];
-                }
-                if ([notificationList count]>0) {
-                    
-                    [weakSelf.notificationsTable setUserInteractionEnabled:NO];
-                    if (weakSelf.pageNotificationCount==1) {
-                        [weakSelf.notificationList removeAllObjects];
-                    }
-                    
-                    weakSelf.pageNotificationCount++;
-                    [weakSelf.notificationList addObjectsFromArray:notificationList];
-                    [weakSelf.notificationsTable reloadData];
-                    [weakSelf.notificationsTable setUserInteractionEnabled:YES];
-                }
-                else{
-                    weakSelf.nothingToLoadMore=YES;
-                    
-                }
-                
-                if ([weakSelf.notificationList count]==0) {
-                    [weakSelf.noNotificationView setHidden:NO];
-                    [weakSelf.notificationsTable setHidden:YES];
-                }
-                else{
-                    [weakSelf.noNotificationView setHidden:YES];
-                    [weakSelf.notificationsTable setHidden:NO];
-                }
-            }
-            [weakSelf.refreshControl endRefreshing];
-        }];
-    }*/
 }
 
 #pragma mark - UITableViewDataSource
@@ -180,7 +106,6 @@
     SPOffer *anOffer = [self.offerList objectAtIndex:indexPath.row];
     SPOfferCell  *cellSample = [[SPOfferCell alloc] init];
     
-    DebugLog(@"[cellSample cellHeight %f", [cellSample cellHeight:anOffer]);
     return [cellSample cellHeight:anOffer];
     }
     else
@@ -198,9 +123,6 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
     if ([self.offerList count]>indexPath.row) {
@@ -210,17 +132,5 @@
         [self.view bringSubviewToFront:self.offerDetailView];
     }
 }
-
 #pragma mark -
-- (void)loadOneMorePage {
-    
-    if (self.nothingToLoadMore==NO){
-        
-        if ([self.offerList count]>8) {
-        [self loadMoreNotificationsByPagination];
-        }
-    }
-}
-
-
 @end

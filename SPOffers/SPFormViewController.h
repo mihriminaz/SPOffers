@@ -10,6 +10,12 @@
 
 @interface SPFormViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UITextField *userIdTF;
+@property (nonatomic, strong) IBOutlet UITextField *appIdTF;
+@property (nonatomic, strong) IBOutlet UITextField *apiKeyTF;
+@property (nonatomic, strong) IBOutlet UITextField *pubOTF;
+@property (nonatomic, strong) IBOutlet UIButton *offerListOpenBtn;
 
+-(void) setDebugInitials;
 @end
 

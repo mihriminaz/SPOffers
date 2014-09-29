@@ -16,11 +16,6 @@
 #import "SPAPIKeyManager.h"
 
 @interface SPFormViewController ()
-@property (nonatomic, strong) IBOutlet UITextField *userIdTF;
-@property (nonatomic, strong) IBOutlet UITextField *appIdTF;
-@property (nonatomic, strong) IBOutlet UITextField *apiKeyTF;
-@property (nonatomic, strong) IBOutlet UITextField *pubOTF;
-@property (nonatomic, strong) IBOutlet UIButton *offerListOpenBtn;
 
 @end
 
@@ -28,15 +23,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = SPLocalizedString(@"OfferForm", @"Offer Form");
     
+    [self setDebugInitials];
+    [self.view addTapGestureRecognizerWithTarget:self selector:@selector(dismissKeyboardView) withDelegate:self];
+}
+
+-(void) setDebugInitials {
     if (DEBUG) {
-        [self.userIdTF setText:@"spiderman"];//player1
-        [self.appIdTF setText:@"2070"];//157
-        [self.apiKeyTF setText:@"1c915e3b5d42d05136185030892fbb846c278927"];//e95a21621a1865bcbae3bee89c4d4f84
+        self.title = SPLocalizedString(@"OfferForm", @"Offer Form");
+        [self.userIdTF setText:@"spiderman"];
+        [self.appIdTF setText:@"2070"];
+        [self.apiKeyTF setText:@"1c915e3b5d42d05136185030892fbb846c278927"];
         [self.pubOTF setText:@"campaign2"];
     }
-    [self.view addTapGestureRecognizerWithTarget:self selector:@selector(dismissKeyboardView) withDelegate:self];
 }
 
 -(void)dismissKeyboardView {
@@ -45,7 +44,6 @@
     [self.apiKeyTF resignFirstResponder];
     [self.pubOTF resignFirstResponder];
 }
-
 
 - (NSString*) checkValidations{
     NSMutableString *infoMessage = [[NSMutableString alloc] initWithString:@""];

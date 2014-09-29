@@ -108,7 +108,6 @@ static const CGFloat kTextBottomAlign = 10.0f;
 
     
     float totalHeight =textRectTeaser.size.height+textRectPayout.size.height+textRectTitle.size.height+kTextTopAlign+kTextBottomAlign;
-    DebugLog(@"totalHeight %f",totalHeight);
     
     if (totalHeight<kSPOfferCellHeight) {
         return kSPOfferCellHeight;
