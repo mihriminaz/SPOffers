@@ -28,7 +28,6 @@
 		1967C87B19D43203001E6656 /* SPMobileAPIBaseNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C87419D43203001E6656 /* SPMobileAPIBaseNetRequest.m */; };
 		1967C87C19D43203001E6656 /* SPMobileAPIBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C87619D43203001E6656 /* SPMobileAPIBaseRequest.m */; };
 		1967C87D19D43203001E6656 /* SPMobileAPIBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C87819D43203001E6656 /* SPMobileAPIBaseResponse.m */; };
-		1967C88119D43252001E6656 /* SPAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C88019D43252001E6656 /* SPAuthenticationManager.m */; };
 		1967C88419D43294001E6656 /* SPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C88319D43294001E6656 /* SPUtility.m */; };
 		1967C88819D4337E001E6656 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1967C88719D4337E001E6656 /* libxml2.dylib */; };
 		1967C88B19D433B2001E6656 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1967C88519D43333001E6656 /* libxml2.2.dylib */; };
@@ -117,6 +116,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		192EEA4019D980FA006774C3 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		192EEA4119D980FA006774C3 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		192EEA4219D98106006774C3 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
+		192EEA4319D98106006774C3 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		1967C83A19D431B9001E6656 /* JMFNetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFNetRequest.h; sourceTree = "<group>"; };
 		1967C83B19D431B9001E6656 /* JMFNetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFNetRequest.m; sourceTree = "<group>"; };
 		1967C83C19D431B9001E6656 /* JMFNetResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFNetResponse.h; sourceTree = "<group>"; };
@@ -161,8 +164,6 @@
 		1967C87619D43203001E6656 /* SPMobileAPIBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMobileAPIBaseRequest.m; sourceTree = "<group>"; };
 		1967C87719D43203001E6656 /* SPMobileAPIBaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMobileAPIBaseResponse.h; sourceTree = "<group>"; };
 		1967C87819D43203001E6656 /* SPMobileAPIBaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMobileAPIBaseResponse.m; sourceTree = "<group>"; };
-		1967C87F19D43252001E6656 /* SPAuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAuthenticationManager.h; sourceTree = "<group>"; };
-		1967C88019D43252001E6656 /* SPAuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAuthenticationManager.m; sourceTree = "<group>"; };
 		1967C88219D43294001E6656 /* SPUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUtility.h; sourceTree = "<group>"; };
 		1967C88319D43294001E6656 /* SPUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUtility.m; sourceTree = "<group>"; };
 		1967C88519D43333001E6656 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
@@ -416,8 +417,6 @@
 				1967C88D19D43448001E6656 /* SPError.m */,
 				1967C88219D43294001E6656 /* SPUtility.h */,
 				1967C88319D43294001E6656 /* SPUtility.m */,
-				1967C87F19D43252001E6656 /* SPAuthenticationManager.h */,
-				1967C88019D43252001E6656 /* SPAuthenticationManager.m */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -842,7 +841,6 @@
 				1967C8A419D4368F001E6656 /* UIView+Shadow.m in Sources */,
 				1967C8AA19D43700001E6656 /* UIFont+SPAdditions.m in Sources */,
 				1967C95A19D5BB36001E6656 /* UIView+WebCacheOperation.m in Sources */,
-				1967C88119D43252001E6656 /* SPAuthenticationManager.m in Sources */,
 				1967C88419D43294001E6656 /* SPUtility.m in Sources */,
 				1967C95219D5BB36001E6656 /* SDWebImageManager.m in Sources */,
 				1967C8D119D44EA8001E6656 /* README.md in Sources */,
@@ -911,6 +909,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				1991A9CD19D40B64002C648A /* Base */,
+				192EEA4019D980FA006774C3 /* de */,
+				192EEA4219D98106006774C3 /* tr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -919,6 +919,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				1991A9D219D40B64002C648A /* Base */,
+				192EEA4119D980FA006774C3 /* de */,
+				192EEA4319D98106006774C3 /* tr */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";

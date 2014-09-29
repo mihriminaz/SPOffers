@@ -7,7 +7,7 @@
 //
 
 #import "SPMobileAPIBaseResponse.h"
-#import "SPApiKeyManager.h"
+#import "SPAPIKeyManager.h"
 #import "AppDelegate.h"
 #import "NSString+Hashes.h"
 

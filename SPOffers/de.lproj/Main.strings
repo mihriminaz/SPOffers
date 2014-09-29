@@ -1,0 +1,15 @@
+
+/* Class = "IBUIButton"; normalTitle = "SEND IT"; ObjectID = "0Ww-CF-06E"; */
+"0Ww-CF-06E.normalTitle" = "SENDEN";
+
+/* Class = "IBUILabel"; text = "Pub0"; ObjectID = "3F9-HY-3Wm"; */
+"3F9-HY-3Wm.text" = "Pub0";
+
+/* Class = "IBUILabel"; text = "UID"; ObjectID = "Dpa-5a-812"; */
+"Dpa-5a-812.text" = "UID";
+
+/* Class = "IBUILabel"; text = "API Key"; ObjectID = "JSr-yK-DRo"; */
+"JSr-yK-DRo.text" = "API Key";
+
+/* Class = "IBUILabel"; text = "AppId"; ObjectID = "RPS-Qt-3DB"; */
+"RPS-Qt-3DB.text" = "AppId";

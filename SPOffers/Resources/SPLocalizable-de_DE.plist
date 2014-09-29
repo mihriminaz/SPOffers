@@ -129,7 +129,7 @@
 	<key>Pub0</key>
 	<string>pub0</string>
 	<key>NO_OFFER</key>
-	<string>NO OFFER</string>
+	<string>KEINE OFFER</string>
 	<key>Thereisnooffernowtrylater</key>
 	<string>There is no offer now try later or try with other parameters.</string>
 	<key>OfferForm</key>
