@@ -41,7 +41,7 @@ static  const CGFloat kContentViewCornerRadius = 4.0f;
 {
     SPConfirmationDialog *confirmationDialog = [self viewWithNibName:nibName];
     if (confirmationDialog) {
-        DebugLog(@"[AppDelegate appDelegate].window.bounds %f %f",[AppDelegate appDelegate].window.bounds.size.width,[AppDelegate appDelegate].window.bounds.size.height);
+        
         [confirmationDialog setFrame:[AppDelegate appDelegate].window.bounds];
         [confirmationDialog.dialogContentView setBackgroundColor:[UIColor invMenuOrangeColor:1.0]];
         confirmationDialog.dialogContentView.layer.cornerRadius = kContentViewCornerRadius;
@@ -127,10 +127,9 @@ static  const CGFloat kContentViewCornerRadius = 4.0f;
     self.completion = completionHandler;
     [self setFrame:[AppDelegate appDelegate].window.bounds];
     
-    DebugLog(@"self %f %f",self.frame.size.width,self.frame.size.height);
     CGRect screenFrame = [SPConfirmationDialog mainScreenRotatedRect];
 	self.center = CGPointMake(CGRectGetMidX(screenFrame), CGRectGetMidY(screenFrame));
-    DebugLog(@"self.centerself.center %f %f",self.center.x,self.center.y);
+    
     if ([self.titleLabel.text length]==0) {
         self.titleLabel.translatesAutoresizingMaskIntoConstraints = YES;
         CGRect textRect = self.titleLabel.frame;

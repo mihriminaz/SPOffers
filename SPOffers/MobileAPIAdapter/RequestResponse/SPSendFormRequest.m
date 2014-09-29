@@ -36,21 +36,7 @@
 {
 	// stringByAppendingPathComponent will collapse out double slashes, so we'll use NSURL as a proxy (until I fix CFLite to use actual URLs)
 	
-    [self createTheRequestUrl:self.formDict];
-    NSString *requestString = [[self.formDict requestComponentsJoinedBy:@"&" keyValueSepator:@"="] lowercaseString];
-    DebugLog(@"requestString %@",requestString);
-    
-    NSMutableString *theConcString = [[NSMutableString alloc] initWithString:requestString];
-    [theConcString appendString:@"&1c915e3b5d42d05136185030892fbb846c278927"];
-    
-    DebugLog(@"theConcString %@",theConcString);
-    
-    NSString *lowerRequestSHA1String = [theConcString sha1];
-    DebugLog(@"lowerRequestSHA1String %@",lowerRequestSHA1String);
-    
-    
-    NSURL *url = [NSURL URLWithString:[[NSString stringWithFormat:@"%@offers.json?%@&hashkey=%@",self.baseURL,requestString,lowerRequestSHA1String] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-    
+    NSURL *url = [self createTheRequestUrl:self.formDict];
 	self.url = [url absoluteString];
     DebugLog(@"myurlis %@",self.url);
 	

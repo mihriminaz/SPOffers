@@ -136,9 +136,7 @@
 
 #pragma mark Progress Animation
 
-- (void)startProgressAnimationTitle:(NSString *)animationTitle withAssignedVC:(UIViewController*)assignedVC {
-    
-    DebugLog(@"letsstart");
+- (void)startProgressAnimationTitle:(NSString *)animationTitle withAssignedVC:(UIViewController*)assignedVC{
     if(self.loadingView == nil){
         self.loadingView = [SPLoadingView showInView:self.window withLoadingText:animationTitle animated:YES];
     }  else {
@@ -160,8 +158,6 @@
 
 
 -(void)stopProgressAnimation:(BOOL)animated {
-    DebugLog(@"letsstop");
-    
     if(self.loadingView != nil){
         [self.loadingView dismissAnimated:animated];
     }

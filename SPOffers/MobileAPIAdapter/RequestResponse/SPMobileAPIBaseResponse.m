@@ -39,7 +39,7 @@
     DebugLog(@"responseDataString  %@", responseDataString);
     
     NSMutableString *theConcString = [[NSMutableString alloc] initWithString:responseDataString];
-    [theConcString appendString:@"1c915e3b5d42d05136185030892fbb846c278927"];
+    [theConcString appendString:[SPAPIKeyManager sharedManager].apiKey];
     DebugLog(@"theConcString  %@", theConcString);
     
     NSString *theResponseSHA1 = [self.httpResponseHeaders objectForKey:@"X-Sponsorpay-Response-Signature"];
@@ -49,11 +49,11 @@
     DebugLog(@"responseSHA1String %@",responseSHA1String);
     
     if ([theResponseSHA1 isEqualToString:responseSHA1String]) {
-        DebugLog(@"yeees");
+        DebugLog(@"signisvalid");
         self.signIsValid=YES;
     }
     else {
-        DebugLog(@"noooo");
+        DebugLog(@"signisinvalid");
         self.signIsValid=NO;
         
         [[SPAlertManager sharedManager] showAlertWithOnlyTitle:SPLocalizedString(@"SIGNINVALID", nil) message:SPLocalizedString(@"Webservicecallsigninvalid", nil)];

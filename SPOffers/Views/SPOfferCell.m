@@ -64,16 +64,11 @@ static const CGFloat kTextBottomAlign = 10.0f;
 #pragma mark - Public Methods
 
 - (void)setOfferData:(SPOffer *)offer {
-    DebugLog(@"offer %@",offer);
     self.theOffer = offer;
-    
     
     [self.teaserLabel setText:offer.teaser];
     [self.titleLabel setText:offer.title];
     [self.payoutLabel setText:offer.payout];
-    DebugLog(@"offer %@",offer.teaser);
-    DebugLog(@"offer %@",offer.title);
-    DebugLog(@"offer %@",offer.thumbnail.hires);
     
     [self.thumbnailImageView sd_setImageWithURL:[NSURL URLWithString:offer.thumbnail.lowres]];
     

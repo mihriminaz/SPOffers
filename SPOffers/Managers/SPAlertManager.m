@@ -81,7 +81,6 @@ static NSString *kSPAlertManagerAssociatedKey = @"kSPAlertManagerAssociatedKey";
     }
     
     if (totalNumberOfButtons>3) {
-        DebugLog(@"it cant happen");
     }
     else if (totalNumberOfButtons==3) {
         [dialog setYesNoButtonText:NO withTheText:cancelButtonTitle];
@@ -105,8 +104,6 @@ static NSString *kSPAlertManagerAssociatedKey = @"kSPAlertManagerAssociatedKey";
         [dialog hideButtons];
         [dialog showCloseBtn];
     }
-    
-    DebugLog(@"dialog.frame %f %f %f",dialog.frame.origin.y, dialog.frame.size.width,dialog.frame.size.height);
     
     [self.dialog setDelegate:self];
 

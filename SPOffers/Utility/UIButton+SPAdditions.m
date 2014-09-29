@@ -59,7 +59,7 @@ static const NSInteger kButtonBorderWidth = 2;
 - (void) setVisualsForBorderButton {
     [[self layer] setMasksToBounds:YES];
     self.layer.cornerRadius = 10.0f;
-    self.layer.borderColor = [UIColor invWhiteEColor:1.0].CGColor;
+    self.layer.borderColor = [UIColor invGeneralWhiteColor:1.0].CGColor;
     self.layer.borderWidth = kButtonBorderWidth;
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     self.clipsToBounds = YES;

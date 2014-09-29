@@ -120,12 +120,12 @@
             [[AppDelegate appDelegate] stopProgressAnimation:YES];
             if (error != nil)
             {
-                DebugLog(@"we have errors  %@", error);
+                DebugLog(@"we have some errors  %@", error);
                 
                 [[SPAlertManager sharedManager] showAlertWithOnlyTitle:SPLocalizedString(@"NETWORK_ERROR", nil) message:[error localizedDescription]];
             }
             else if (isSignValid==YES) {
-                DebugLog(@"no errors  ");
+                DebugLog(@"no errors");
                 if ([theResponse.offers count]>0) {
                     
                     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:
