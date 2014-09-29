@@ -20,17 +20,17 @@ static  const CGFloat kContentViewCornerRadius = 4.0f;
 
 @interface SPConfirmationDialog ()
 
-@property (retain, nonatomic) IBOutlet UIButton *closeButton;
+@property (strong, nonatomic) IBOutlet UIButton *closeButton;
 
-@property (retain, nonatomic) IBOutlet UIView *buttonContainerView;
-@property (retain, nonatomic) IBOutlet UILabel *titleLabel;
-@property (retain, nonatomic) IBOutlet UILabel *textLabel;
-@property (retain, nonatomic) IBOutlet UIButton *yesButton;
-@property (retain, nonatomic) IBOutlet UIButton *noButton;
-@property (retain, nonatomic) IBOutlet UIButton *otherButton;
-@property (retain, nonatomic) IBOutlet UIView *dialogContentView;
-@property (retain, nonatomic) IBOutlet UIView *backgroundView;
-@property (retain, nonatomic) IBOutlet UIButton *backgroundButton;
+@property (strong, nonatomic) IBOutlet UIView *buttonContainerView;
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *textLabel;
+@property (strong, nonatomic) IBOutlet UIButton *yesButton;
+@property (strong, nonatomic) IBOutlet UIButton *noButton;
+@property (strong, nonatomic) IBOutlet UIButton *otherButton;
+@property (strong, nonatomic) IBOutlet UIView *dialogContentView;
+@property (strong, nonatomic) IBOutlet UIView *backgroundView;
+@property (strong, nonatomic) IBOutlet UIButton *backgroundButton;
 @property (nonatomic, copy) void (^completion)(SPConfirmationDialog *confirmationDialog, NSInteger buttonIndex);
 
 @end
@@ -41,6 +41,8 @@ static  const CGFloat kContentViewCornerRadius = 4.0f;
 {
     SPConfirmationDialog *confirmationDialog = [self viewWithNibName:nibName];
     if (confirmationDialog) {
+        DebugLog(@"[AppDelegate appDelegate].window.bounds %f %f",[AppDelegate appDelegate].window.bounds.size.width,[AppDelegate appDelegate].window.bounds.size.height);
+        [confirmationDialog setFrame:[AppDelegate appDelegate].window.bounds];
         [confirmationDialog.dialogContentView setBackgroundColor:[UIColor invMenuOrangeColor:1.0]];
         confirmationDialog.dialogContentView.layer.cornerRadius = kContentViewCornerRadius;
         
@@ -73,8 +75,6 @@ static  const CGFloat kContentViewCornerRadius = 4.0f;
         confirmationDialog.backgroundButton.tag=CLOSEBACKGROUNDINDEX;
         
         confirmationDialog.tag=kDefaultConfirmationDialogTag;
-        
-        [confirmationDialog setFrame:[AppDelegate appDelegate].window.frame];
     }
     return confirmationDialog;
 }
@@ -82,7 +82,10 @@ static  const CGFloat kContentViewCornerRadius = 4.0f;
 + (id)dialogWithText:(NSString *)dialogText title:(NSString *)titleText
 {
     SPConfirmationDialog *confirmationDialog = [self dialogWithNibName:[self nibName]];
+
     if (confirmationDialog) {
+        [confirmationDialog setFrame:[AppDelegate appDelegate].window.bounds];
+        
         [confirmationDialog.textLabel setText:dialogText];
         [confirmationDialog.titleLabel setText:titleText];
         
@@ -104,21 +107,10 @@ static  const CGFloat kContentViewCornerRadius = 4.0f;
     return confirmationDialog;
 }
 
-+ (UIView *)keyView
-{
-	UIWindow *window = [UIApplication sharedApplication].keyWindow;
-	if (window == nil && [[[UIApplication sharedApplication] windows] count] > 0)
-	{
-		window = [[UIApplication sharedApplication].windows objectAtIndex:0];
-	}
-	
-	return [[window rootViewController] view];
-}
-
 + (CGRect)mainScreenRotatedRect
 {
-	CGFloat screenWidth = CGRectGetWidth([UIScreen mainScreen].bounds);
-    CGFloat screenHeight = CGRectGetHeight([UIScreen mainScreen].bounds);
+	CGFloat screenWidth = CGRectGetWidth([AppDelegate appDelegate].window.bounds);
+    CGFloat screenHeight = CGRectGetHeight([AppDelegate appDelegate].window.bounds);
 	
     UIInterfaceOrientation interfaceOrientation = [[UIApplication sharedApplication] statusBarOrientation];
     if (UIInterfaceOrientationIsLandscape(interfaceOrientation)) {
@@ -132,11 +124,13 @@ static  const CGFloat kContentViewCornerRadius = 4.0f;
 
 - (void)showDialog: (SPConfirmationDialog *)dialog withCompletionHandler:(void (^)(SPConfirmationDialog *, NSInteger))completionHandler
 {
-	self.completion = completionHandler;
+    self.completion = completionHandler;
+    [self setFrame:[AppDelegate appDelegate].window.bounds];
     
+    DebugLog(@"self %f %f",self.frame.size.width,self.frame.size.height);
     CGRect screenFrame = [SPConfirmationDialog mainScreenRotatedRect];
 	self.center = CGPointMake(CGRectGetMidX(screenFrame), CGRectGetMidY(screenFrame));
-    
+    DebugLog(@"self.centerself.center %f %f",self.center.x,self.center.y);
     if ([self.titleLabel.text length]==0) {
         self.titleLabel.translatesAutoresizingMaskIntoConstraints = YES;
         CGRect textRect = self.titleLabel.frame;
@@ -145,7 +139,7 @@ static  const CGFloat kContentViewCornerRadius = 4.0f;
         [self updateConstraints];
     }
     
-	[[SPConfirmationDialog keyView] addSubview:self];
+    [[[AppDelegate appDelegate] window] addSubview:self];
     
 	SPConfirmationDialog *__weak weakSelf = self;
     
@@ -269,6 +263,7 @@ static  const CGFloat kContentViewCornerRadius = 4.0f;
 {
     SPConfirmationDialog *confirmationDialog = [self viewWithNibName:nibName];
     if (confirmationDialog) {
+        [confirmationDialog setFrame:[AppDelegate appDelegate].window.bounds];
         [confirmationDialog.backgroundView setAlpha:0.0];
         
         [confirmationDialog.dialogContentView setBackgroundColor:[UIColor invMenuOrangeColor:1.0]];
