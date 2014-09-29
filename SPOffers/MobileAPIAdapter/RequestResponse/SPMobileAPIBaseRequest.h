@@ -12,5 +12,4 @@
 @property (readonly, nonatomic, copy) NSString *baseURL;
 
 + (void)setBaseURL:(NSString *)baseURL;
-- (id)initWithAppToken;
 @end

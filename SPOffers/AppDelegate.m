@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "SPConfiguration.h"
 #import "SPLoadingView.h"
+#import "SPAPIKeyManager.h"
 
 @interface AppDelegate ()<JMFModuleManagerDelegate>
 @property (readwrite, strong) SPMobileAPIAdapter *apiAdapter;
@@ -26,7 +27,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+    [SPAPIKeyManager sharedManager];
     [self configurationSetUp:application withLaunchOptions:launchOptions];
     return YES;
 }

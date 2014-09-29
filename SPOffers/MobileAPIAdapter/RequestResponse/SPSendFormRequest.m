@@ -21,7 +21,7 @@
 @implementation SPSendFormRequest
 
 - (id)initWithFormDict:(NSDictionary *)formDict {
-    self = [super initWithAppToken];
+    self = [super init];
 	if (self != nil)
 	{
 		_responseClass = [SPSendFormResponse class];
@@ -36,7 +36,7 @@
 {
 	// stringByAppendingPathComponent will collapse out double slashes, so we'll use NSURL as a proxy (until I fix CFLite to use actual URLs)
 	
-    
+    [self createTheRequestUrl:self.formDict];
     NSString *requestString = [[self.formDict requestComponentsJoinedBy:@"&" keyValueSepator:@"="] lowercaseString];
     DebugLog(@"requestString %@",requestString);
     

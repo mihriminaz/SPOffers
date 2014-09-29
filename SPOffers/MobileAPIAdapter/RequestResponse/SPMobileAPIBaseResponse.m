@@ -7,7 +7,7 @@
 //
 
 #import "SPMobileAPIBaseResponse.h"
-#import "SPAuthenticationManager.h"
+#import "SPApiKeyManager.h"
 #import "AppDelegate.h"
 #import "NSString+Hashes.h"
 
@@ -34,14 +34,6 @@
     self.message = [self.responseDict jmf_stringValueForKey:@"message"];
     self.count = [self.responseDict jmf_stringValueForKey:@"count"];
     self.pages = [self.responseDict jmf_stringValueForKey:@"pages"];
-
-	NSString *appAuthToken = self.httpResponseHeaders[SPAppTokenHeader];
-	if ([appAuthToken length]>0)
-	{
-		self.appAuthToken = appAuthToken;
-        [SPAuthenticationManager sharedManager].appAuthenticationToken = appAuthToken;
-	}
-    
     
     NSString* responseDataString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
     DebugLog(@"responseDataString  %@", responseDataString);

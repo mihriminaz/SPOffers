@@ -13,6 +13,7 @@
 #import <AdSupport/ASIdentifierManager.h>
 #import "SPOfferListViewController.h"
 #import "SPOfferResponse.h"
+#import "SPAPIKeyManager.h"
 
 @interface SPFormViewController ()
 @property (nonatomic, strong) IBOutlet UITextField *userIdTF;
@@ -63,8 +64,8 @@
     
     /*not required
      if ([self.pubOTF.text length]==0) {
-        [infoMessage appendString:[NSString stringWithFormat:@"%@\n", SPLocalizedString(@"PubO", @"PubO")]];
-    }*/
+     [infoMessage appendString:[NSString stringWithFormat:@"%@\n", SPLocalizedString(@"PubO", @"PubO")]];
+     }*/
     
     return infoMessage;
 }
@@ -78,73 +79,73 @@
         [[SPAlertManager sharedManager] showAlertWithOnlyTitle:SPLocalizedString(@"MANDATORYFIELDS", nil) message:errorMessage];
     }
     else{
+        [SPAPIKeyManager sharedManager].apiKey=self.apiKeyTF.text;
         
+        SPFormViewController *__weak weakSelf = self;
+        SPMobileAPIAdapter *api = [AppDelegate appDelegate].apiAdapter;
         
-    SPFormViewController *__weak weakSelf = self;
-    SPMobileAPIAdapter *api = [AppDelegate appDelegate].apiAdapter;
-    
-    NSMutableDictionary *aDict = [[NSMutableDictionary alloc] init];
-    
-    [aDict setObject:self.appIdTF.text forKey:@"appid"];
+        NSMutableDictionary *aDict = [[NSMutableDictionary alloc] init];
         
-    if ([self.userIdTF.text length]>0) {
-    [aDict setObject:self.userIdTF.text forKey:@"uid"];
-    }
+        [aDict setObject:self.appIdTF.text forKey:@"appid"];
         
-    if ([self.pubOTF.text length]>0) {
-    [aDict setObject:self.pubOTF.text forKey:@"pub0"];
-    }
-    [aDict setObject:[JMFUtilities uniqueDeviceID] forKey:@"device_id"];
-    [aDict setObject:[[NSLocale currentLocale] localeIdentifier] forKey:@"locale"];
-    [aDict setObject:[[SPUtility sharedUtility] getIPAddress] forKey:@"ip"];
-    [aDict setObject:_M([[UIDevice currentDevice] systemVersion]) forKey:@"os_version"];
-    [aDict setObject:[NSString stringWithFormat:@"%f",[[NSDate date] timeIntervalSince1970]] forKey:@"timestamp"];
-    
-    /*future properties
-     if ([ASIdentifierManager sharedManager].advertisingTrackingEnabled ==YES) {
-        [aDict setObject:[[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString] forKey:@"apple_idfa"];
-        [aDict setObject:@"true" forKey:@"apple_idfa_tracking_enabled"];
-    }
-    else{
-        [aDict setObject:@"false" forKey:@"apple_idfa_tracking_enabled"];
-    }
-    
-    [aDict setObject:[OpenUDID value] forKey:@"openudid"];
-    [aDict setObject:@"phone" forKey:@"device"];
-    */
-
-    [[AppDelegate appDelegate] startProgressAnimationTitle:@"SENDING" withAssignedVC:self];
-    [api sendForm:aDict withHandler:^(SPOfferResponse *theResponse, BOOL isSignValid, NSError *error) {
-
-        [[AppDelegate appDelegate] stopProgressAnimation:YES];
-        if (error != nil)
-        {
-            DebugLog(@"we have errors  %@", error);
-            
-            [[SPAlertManager sharedManager] showAlertWithOnlyTitle:SPLocalizedString(@"NETWORK_ERROR", nil) message:[error localizedDescription]];
+        if ([self.userIdTF.text length]>0) {
+            [aDict setObject:self.userIdTF.text forKey:@"uid"];
         }
-        else if (isSignValid==YES) {
-            DebugLog(@"no errors  ");
-            if ([theResponse.offers count]>0) {
-             
-            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:
-                                        @"Main" bundle:[NSBundle mainBundle]];
-            UIViewController *myController = [storyboard instantiateViewControllerWithIdentifier:@"SPOfferListViewController"];
-            [(SPOfferListViewController*)myController setOfferResponse:theResponse];
-            [self.navigationController pushViewController:myController animated:YES];
-            }
-            else {
+        
+        if ([self.pubOTF.text length]>0) {
+            [aDict setObject:self.pubOTF.text forKey:@"pub0"];
+        }
+        [aDict setObject:[JMFUtilities uniqueDeviceID] forKey:@"device_id"];
+        [aDict setObject:[[NSLocale currentLocale] localeIdentifier] forKey:@"locale"];
+        [aDict setObject:[[SPUtility sharedUtility] getIPAddress] forKey:@"ip"];
+        [aDict setObject:_M([[UIDevice currentDevice] systemVersion]) forKey:@"os_version"];
+        [aDict setObject:[NSString stringWithFormat:@"%f",[[NSDate date] timeIntervalSince1970]] forKey:@"timestamp"];
+        
+        /*future properties
+         if ([ASIdentifierManager sharedManager].advertisingTrackingEnabled ==YES) {
+         [aDict setObject:[[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString] forKey:@"apple_idfa"];
+         [aDict setObject:@"true" forKey:@"apple_idfa_tracking_enabled"];
+         }
+         else{
+         [aDict setObject:@"false" forKey:@"apple_idfa_tracking_enabled"];
+         }
+         
+         [aDict setObject:[OpenUDID value] forKey:@"openudid"];
+         [aDict setObject:@"phone" forKey:@"device"];
+         */
+        
+        [[AppDelegate appDelegate] startProgressAnimationTitle:@"SENDING" withAssignedVC:self];
+        [api sendForm:aDict withHandler:^(SPOfferResponse *theResponse, BOOL isSignValid, NSError *error) {
+            
+            [[AppDelegate appDelegate] stopProgressAnimation:YES];
+            if (error != nil)
+            {
+                DebugLog(@"we have errors  %@", error);
                 
-                [[SPAlertManager sharedManager] showAlertWithOnlyTitle:SPLocalizedString(@"NO_OFFER", nil)
-                                                               message:SPLocalizedString(@"Thereisnooffernowtrylater", nil)
-                 ];
+                [[SPAlertManager sharedManager] showAlertWithOnlyTitle:SPLocalizedString(@"NETWORK_ERROR", nil) message:[error localizedDescription]];
             }
-        }
+            else if (isSignValid==YES) {
+                DebugLog(@"no errors  ");
+                if ([theResponse.offers count]>0) {
+                    
+                    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:
+                                                @"Main" bundle:[NSBundle mainBundle]];
+                    UIViewController *myController = [storyboard instantiateViewControllerWithIdentifier:@"SPOfferListViewController"];
+                    [(SPOfferListViewController*)myController setOfferResponse:theResponse];
+                    [weakSelf.navigationController pushViewController:myController animated:YES];
+                }
+                else {
+                    
+                    [[SPAlertManager sharedManager] showAlertWithOnlyTitle:SPLocalizedString(@"NO_OFFER", nil)
+                                                                   message:SPLocalizedString(@"Thereisnooffernowtrylater", nil)
+                     ];
+                }
+            }
         }];
-     
-     
+        
+        
     }
-            
+    
 }
 
 - (void)didReceiveMemoryWarning {
