@@ -91,6 +91,7 @@
             NSError *error;
             if (![inResponse.code isEqualToString:@"OK"])
             {
+                //No Content :200 or other errors
                 NSMutableDictionary *dict = [NSMutableDictionary dictionary];
                 NSString *errorMessage;
                 if([inResponse.message length]) {

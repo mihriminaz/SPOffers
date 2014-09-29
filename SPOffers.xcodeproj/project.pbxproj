@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		192EEA4619D98281006774C3 /* SPAPIKeyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 192EEA4519D98281006774C3 /* SPAPIKeyManager.m */; };
+		192EEA4819D98C0C006774C3 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 192EEA4719D98C0C006774C3 /* close.png */; };
+		192EEA4A19D98C10006774C3 /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 192EEA4919D98C10006774C3 /* close@2x.png */; };
+		192EEA4C19D98C15006774C3 /* close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 192EEA4B19D98C15006774C3 /* close@3x.png */; };
 		1967C85D19D431B9001E6656 /* JMFNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C83B19D431B9001E6656 /* JMFNetRequest.m */; };
 		1967C85E19D431B9001E6656 /* JMFNetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C83D19D431B9001E6656 /* JMFNetResponse.m */; };
 		1967C85F19D431B9001E6656 /* JMFNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C83F19D431B9001E6656 /* JMFNetworkManager.m */; };
@@ -123,6 +126,9 @@
 		192EEA4319D98106006774C3 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		192EEA4419D98281006774C3 /* SPAPIKeyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAPIKeyManager.h; sourceTree = "<group>"; };
 		192EEA4519D98281006774C3 /* SPAPIKeyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAPIKeyManager.m; sourceTree = "<group>"; };
+		192EEA4719D98C0C006774C3 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		192EEA4919D98C10006774C3 /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
+		192EEA4B19D98C15006774C3 /* close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@3x.png"; sourceTree = "<group>"; };
 		1967C83A19D431B9001E6656 /* JMFNetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFNetRequest.h; sourceTree = "<group>"; };
 		1967C83B19D431B9001E6656 /* JMFNetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFNetRequest.m; sourceTree = "<group>"; };
 		1967C83C19D431B9001E6656 /* JMFNetResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFNetResponse.h; sourceTree = "<group>"; };
@@ -603,6 +609,7 @@
 		1967C96219D5E49C001E6656 /* 1x */ = {
 			isa = PBXGroup;
 			children = (
+				192EEA4719D98C0C006774C3 /* close.png */,
 				1967C96319D5E49C001E6656 /* dot.png */,
 			);
 			path = 1x;
@@ -611,6 +618,7 @@
 		1967C96419D5E49C001E6656 /* 2x */ = {
 			isa = PBXGroup;
 			children = (
+				192EEA4919D98C10006774C3 /* close@2x.png */,
 				1967C96519D5E49C001E6656 /* dot@2x.png */,
 			);
 			path = 2x;
@@ -619,6 +627,7 @@
 		1967C96619D5E49C001E6656 /* 3x */ = {
 			isa = PBXGroup;
 			children = (
+				192EEA4B19D98C15006774C3 /* close@3x.png */,
 				1967C96719D5E49C001E6656 /* dot@3x.png */,
 			);
 			path = 3x;
@@ -795,12 +804,15 @@
 				1967C96019D5E181001E6656 /* SPLoadingView.xib in Resources */,
 				1967C8DC19D462DA001E6656 /* configuration-test.json in Resources */,
 				1967C8D919D462DA001E6656 /* configuration-dev.json in Resources */,
+				192EEA4C19D98C15006774C3 /* close@3x.png in Resources */,
+				192EEA4A19D98C10006774C3 /* close@2x.png in Resources */,
 				1967C8E119D4630A001E6656 /* SPLocalizable-de_DE.plist in Resources */,
 				1967C8DB19D462DA001E6656 /* configuration-rel.json in Resources */,
 				1991A9D019D40B64002C648A /* Images.xcassets in Resources */,
 				1967C8E219D4630A001E6656 /* SPLocalizable-en_US.plist in Resources */,
 				1967C8E319D4630A001E6656 /* SPLocalizable-tr_TR.plist in Resources */,
 				1967C96919D5E49C001E6656 /* dot@2x.png in Resources */,
+				192EEA4819D98C0C006774C3 /* close.png in Resources */,
 				1967C92819D5B9D1001E6656 /* SPOfferCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
