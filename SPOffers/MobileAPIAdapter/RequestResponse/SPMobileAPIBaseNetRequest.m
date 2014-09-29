@@ -7,6 +7,7 @@
 //
 
 #import "SPMobileAPIBaseNetRequest.h"
+#import "SPAPIKeyManager.h"
 #import "NSDictionary+SPSortAddition.h"
 #import "NSString+Hashes.h"
 #import "JMFXMLNode.h"

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192EEA4619D98281006774C3 /* SPAPIKeyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 192EEA4519D98281006774C3 /* SPAPIKeyManager.m */; };
 		1967C85D19D431B9001E6656 /* JMFNetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C83B19D431B9001E6656 /* JMFNetRequest.m */; };
 		1967C85E19D431B9001E6656 /* JMFNetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C83D19D431B9001E6656 /* JMFNetResponse.m */; };
 		1967C85F19D431B9001E6656 /* JMFNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1967C83F19D431B9001E6656 /* JMFNetworkManager.m */; };
@@ -120,6 +121,8 @@
 		192EEA4119D980FA006774C3 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		192EEA4219D98106006774C3 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		192EEA4319D98106006774C3 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		192EEA4419D98281006774C3 /* SPAPIKeyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAPIKeyManager.h; sourceTree = "<group>"; };
+		192EEA4519D98281006774C3 /* SPAPIKeyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAPIKeyManager.m; sourceTree = "<group>"; };
 		1967C83A19D431B9001E6656 /* JMFNetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFNetRequest.h; sourceTree = "<group>"; };
 		1967C83B19D431B9001E6656 /* JMFNetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFNetRequest.m; sourceTree = "<group>"; };
 		1967C83C19D431B9001E6656 /* JMFNetResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFNetResponse.h; sourceTree = "<group>"; };
@@ -424,6 +427,8 @@
 		1967C88F19D434E2001E6656 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				192EEA4419D98281006774C3 /* SPAPIKeyManager.h */,
+				192EEA4519D98281006774C3 /* SPAPIKeyManager.m */,
 				1967C89019D434E2001E6656 /* SPAlertManager.h */,
 				1967C89119D434E2001E6656 /* SPAlertManager.m */,
 				1967C89319D43532001E6656 /* SPLocalizationManager.h */,
@@ -819,6 +824,7 @@
 				1967C94E19D5BB36001E6656 /* SDWebImageCompat.m in Sources */,
 				1967C86719D431B9001E6656 /* JMFUtilities.m in Sources */,
 				1967C86919D431B9001E6656 /* NSData+JMFExtensions.m in Sources */,
+				192EEA4619D98281006774C3 /* SPAPIKeyManager.m in Sources */,
 				1967C86619D431B9001E6656 /* jMFModuleManager.m in Sources */,
 				1967C89C19D4360C001E6656 /* SPConfirmationDialog.m in Sources */,
 				1967C95019D5BB36001E6656 /* SDWebImageDownloader.m in Sources */,
