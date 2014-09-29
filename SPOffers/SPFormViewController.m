@@ -53,15 +53,16 @@
         [infoMessage appendString:[NSString stringWithFormat:@"%@\n", SPLocalizedString(@"AppId", @"AppId")]];
     }
     
-    /*if ([self.userIdTF.text length]==0) {
+    if ([self.userIdTF.text length]==0) {
         [infoMessage appendString:[NSString stringWithFormat:@"%@\n", SPLocalizedString(@"UserId", @"UserId")]];
-    }*/
+    }
     
     if ([self.apiKeyTF.text length]==0) {
         [infoMessage appendString:[NSString stringWithFormat:@"%@\n", SPLocalizedString(@"ApiKey", @"ApiKey")]];
     }
     
-    /*if ([self.pubOTF.text length]==0) {
+    /*not required
+     if ([self.pubOTF.text length]==0) {
         [infoMessage appendString:[NSString stringWithFormat:@"%@\n", SPLocalizedString(@"PubO", @"PubO")]];
     }*/
     
@@ -89,24 +90,18 @@
     if ([self.userIdTF.text length]>0) {
     [aDict setObject:self.userIdTF.text forKey:@"uid"];
     }
-   // [aDict setObject:self.apiKeyTF.text forKey:@"apikey"];
         
     if ([self.pubOTF.text length]>0) {
     [aDict setObject:self.pubOTF.text forKey:@"pub0"];
     }
-        
-       // [aDict setObject:@"2" forKey:@"page"];
-        //[aDict setObject:@"1312211903" forKey:@"ps_time"];
     [aDict setObject:[JMFUtilities uniqueDeviceID] forKey:@"device_id"];
     [aDict setObject:[[NSLocale currentLocale] localeIdentifier] forKey:@"locale"];
     [aDict setObject:[[SPUtility sharedUtility] getIPAddress] forKey:@"ip"];
     [aDict setObject:_M([[UIDevice currentDevice] systemVersion]) forKey:@"os_version"];
-    //[aDict setObject:@"112" forKey:@"offer_types"];
     [aDict setObject:[NSString stringWithFormat:@"%f",[[NSDate date] timeIntervalSince1970]] forKey:@"timestamp"];
     
-    
-    
-    /*if ([ASIdentifierManager sharedManager].advertisingTrackingEnabled ==YES) {
+    /*future properties
+     if ([ASIdentifierManager sharedManager].advertisingTrackingEnabled ==YES) {
         [aDict setObject:[[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString] forKey:@"apple_idfa"];
         [aDict setObject:@"true" forKey:@"apple_idfa_tracking_enabled"];
     }
@@ -117,44 +112,18 @@
     [aDict setObject:[OpenUDID value] forKey:@"openudid"];
     [aDict setObject:@"phone" forKey:@"device"];
     */
-    //format json
-    //appid
-    //uid
-    //locale	de
-    //os_version _M([[UIDevice currentDevice] systemVersion])
-    //timestamp date now
-    
-    ///ip
-    ///pub0
-    ///page
-    ///offer_types
-    ///ps_time
-    ///apple_idfa  [[ASIdentifierManager sharedManager] advertisingIdentifier]
-    ///apple_idfa_tracking_enabled  [[ASIdentifierManager sharedManager]advertisingTrackingEnabled]
-    ///mac_address	The MAC address of the phone's wifi adapter.
-    
-    //openudid
-    //secureudid the Fyber SecureUDID Library.
-    
-    //md5_mac	The MAC address of the phone's wifi adapter hashed with the MD5 algorithm.
-    //sha1_mac	The MAC address of the phone's wifi adapter hashed with the SHA1 algorithm
-    //device "phone" or "tablet"
-    
-    //hashkey
 
     [[AppDelegate appDelegate] startProgressAnimationTitle:@"SENDING" withAssignedVC:self];
-    [api sendForm:aDict withHandler:^(SPOfferResponse *theResponse, NSError *error) {
-        
+    [api sendForm:aDict withHandler:^(SPOfferResponse *theResponse, BOOL isSignValid, NSError *error) {
+
         [[AppDelegate appDelegate] stopProgressAnimation:YES];
         if (error != nil)
         {
             DebugLog(@"we have errors  %@", error);
             
-            
             [[SPAlertManager sharedManager] showAlertWithOnlyTitle:SPLocalizedString(@"NETWORK_ERROR", nil) message:[error localizedDescription]];
         }
-        else
-        {
+        else if (isSignValid==YES) {
             DebugLog(@"no errors  ");
             if ([theResponse.offers count]>0) {
              

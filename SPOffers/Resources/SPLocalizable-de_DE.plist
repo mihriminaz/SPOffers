@@ -136,5 +136,9 @@
 	<string>Offer Form</string>
 	<key>Offers</key>
 	<string>Offers</string>
+	<key>SIGNINVALID</key>
+	<string>INVALID SIGN</string>
+	<key>Webservicecallsigninvalid</key>
+	<string>Webservice call is succeed but sign is invalid.</string>
 </dict>
 </plist>

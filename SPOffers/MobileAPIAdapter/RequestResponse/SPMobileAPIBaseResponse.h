@@ -15,5 +15,6 @@
 @property (nonatomic, copy) NSString *pages;
 @property (nonatomic, copy) NSString *code;
 @property (nonatomic, copy) NSString *message;
+@property (nonatomic, assign) BOOL signIsValid;
 
 @end

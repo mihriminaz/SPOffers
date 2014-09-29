@@ -122,21 +122,25 @@
 	<string>Next</string>
 	<key>Skip</key>
 	<string>Skip</string>
-    <key>AppId</key>
-    <string>AppId</string>
-    <key>UserId</key>
-    <string>UserId</string>
-    <key>ApiKey</key>
-    <string>API KEY</string>
-    <key>Pub0</key>
-    <string>pub0</string>
-    <key>NO_OFFER</key>
-    <string>NO OFFER</string>
-    <key>Thereisnooffernowtrylater</key>
-    <string>There is no offer now try later or try with other parameters.</string>
-    <key>OfferForm</key>
-    <string>Offer Form</string>
-    <key>Offers</key>
-    <string>Offers</string>
+	<key>AppId</key>
+	<string>AppId</string>
+	<key>UserId</key>
+	<string>UserId</string>
+	<key>ApiKey</key>
+	<string>API KEY</string>
+	<key>Pub0</key>
+	<string>pub0</string>
+	<key>NO_OFFER</key>
+	<string>NO OFFER</string>
+	<key>Thereisnooffernowtrylater</key>
+	<string>There is no offer now try later or try with other parameters.</string>
+	<key>OfferForm</key>
+	<string>Offer Form</string>
+	<key>Offers</key>
+	<string>Offers</string>
+	<key>SIGNINVALID</key>
+	<string>INVALID SIGN</string>
+	<key>Webservicecallsigninvalid</key>
+	<string>Webservice call is succeed but sign is invalid.</string>
 </dict>
 </plist>

@@ -7,7 +7,6 @@
 //
 
 #import "SPSendFormRequest.h"
-#import "SPSignature.h"
 #import "NSDictionary+SPSortAddition.h"
 #import "NSString+Hashes.h"
 #import "JMFXMLNode.h"
@@ -71,7 +70,6 @@
 
 @interface SPSendFormResponse ()
 @property (nonatomic, readwrite, strong) SPOfferResponse *offerResponse;
-
 @end
 
 @implementation SPSendFormResponse
@@ -80,30 +78,8 @@
 {
 	[super parseData:responseData];
     
-	NSString* responseDataString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-    
-    
-    DebugLog(@"responseDataString  %@", responseDataString);
-    
-    
-    NSMutableString *theConcString = [[NSMutableString alloc] initWithString:responseDataString];
-    [theConcString appendString:@"1c915e3b5d42d05136185030892fbb846c278927"];
-    DebugLog(@"theConcString  %@", theConcString);
-    
-   NSString *theResponseSHA1 = [self.httpResponseHeaders objectForKey:@"X-Sponsorpay-Response-Signature"];
-    
-    DebugLog(@"theResponseSHA1 %@",theResponseSHA1);
-    NSString *responseSHA1String = [theConcString sha1];
-    DebugLog(@"responseSHA1String %@",responseSHA1String);
-    
-    if ([theResponseSHA1 isEqualToString:responseSHA1String]) {
-        DebugLog(@"yeees");
-        
+    if (self.signIsValid==YES) {
         self.offerResponse = [[SPOfferResponse alloc] initWithDictionary:self.responseDict];
-        
-    }
-    else {
-            DebugLog(@"noooo");
     }
     
 }

@@ -15,13 +15,13 @@
 
 @interface SPLoadingView ()
 
-@property (retain, nonatomic) IBOutlet UIButton *backgroundButton;
-@property (retain, nonatomic) IBOutlet UIView *loadingContentView;
-@property (retain, nonatomic) IBOutlet UILabel *loadingLbl;
-@property (retain, nonatomic) IBOutlet UIImageView *dot1ImageView;
-@property (retain, nonatomic) IBOutlet UIImageView *dot2ImageView;
-@property (retain, nonatomic) IBOutlet UIImageView *dot3ImageView;
-@property (retain, nonatomic) IBOutlet UIImageView *dot4ImageView;
+@property (strong, nonatomic) IBOutlet UIButton *backgroundButton;
+@property (strong, nonatomic) IBOutlet UIView *loadingContentView;
+@property (strong, nonatomic) IBOutlet UILabel *loadingLbl;
+@property (strong, nonatomic) IBOutlet UIImageView *dot1ImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *dot2ImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *dot3ImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *dot4ImageView;
 
 @property (nonatomic) BOOL visible;
 

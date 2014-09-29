@@ -51,7 +51,7 @@
 	return self;
 }
 
-- (void)sendForm:(NSDictionary *)formDict withHandler:(void (^)(SPOfferResponse *theResponse, NSError *error))handler{
+- (void)sendForm:(NSDictionary *)formDict withHandler:(void (^)(SPOfferResponse *theResponse, BOOL isSignValid, NSError *error))handler{
     
     SPSendFormRequest *request = [[SPSendFormRequest alloc] initWithFormDict:formDict];
     NSString *requestIdentifier = @"SPSendFormResponse";
@@ -59,7 +59,7 @@
                                            withID:requestIdentifier
                                       withHandler:^(SPSendFormResponse *response) {
                                           if (handler)
-                                              handler(response.offerResponse, [SPMobileAPIAdapter errorWithResponse:response]);
+                                              handler(response.offerResponse, response.signIsValid, [SPMobileAPIAdapter errorWithResponse:response]);
                                       }];
     
 }

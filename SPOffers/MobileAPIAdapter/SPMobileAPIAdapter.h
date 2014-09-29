@@ -14,6 +14,6 @@
 
 + (NSString *)errorDomain;
 
-- (void)sendForm:(NSDictionary *)formDict withHandler:(void (^)(SPOfferResponse *theResponse, NSError *error))handler;
+- (void)sendForm:(NSDictionary *)formDict withHandler:(void (^)(SPOfferResponse *theResponse, BOOL isSignValid, NSError *error))handler;
 @end
 
