@@ -97,67 +97,6 @@
 		1991A9D019D40B64002C648A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1991A9CF19D40B64002C648A /* Images.xcassets */; };
 		1991A9D319D40B64002C648A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1991A9D119D40B64002C648A /* LaunchScreen.xib */; };
 		1991A9DF19D40B65002C648A /* SPOffersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991A9DE19D40B65002C648A /* SPOffersTests.m */; };
-		1991AA7219D40BF3002C648A /* NSDictionary+SPSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991A9EC19D40BF3002C648A /* NSDictionary+SPSerialization.m */; };
-		1991AA7319D40BF3002C648A /* NSString+SPURLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991A9EE19D40BF3002C648A /* NSString+SPURLEncoding.m */; };
-		1991AA7419D40BF3002C648A /* NSURL+SPDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991A9F019D40BF3002C648A /* NSURL+SPDescription.m */; };
-		1991AA7519D40BF3002C648A /* NSURL+SPParametersParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991A9F219D40BF3002C648A /* NSURL+SPParametersParsing.m */; };
-		1991AA7619D40BF3002C648A /* SPCloseX.png in Resources */ = {isa = PBXBuildFile; fileRef = 1991A9F419D40BF3002C648A /* SPCloseX.png */; };
-		1991AA7719D40BF3002C648A /* SPActionIdValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991A9F819D40BF3002C648A /* SPActionIdValidator.m */; };
-		1991AA7819D40BF3002C648A /* SPAdvertisementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991A9FA19D40BF3002C648A /* SPAdvertisementViewController.m */; };
-		1991AA7919D40BF3002C648A /* SPAdvertiserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991A9FE19D40BF3002C648A /* SPAdvertiserManager.m */; };
-		1991AA7A19D40BF3002C648A /* SPAppIdValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA0019D40BF3002C648A /* SPAppIdValidator.m */; };
-		1991AA7B19D40BF3002C648A /* SPAppleAdvertiserIDProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA0219D40BF3002C648A /* SPAppleAdvertiserIDProvider.m */; };
-		1991AA7C19D40BF3002C648A /* SPBaseNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA0419D40BF3002C648A /* SPBaseNetwork.m */; };
-		1991AA7D19D40BF3002C648A /* SPBrandEngageClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA0619D40BF3002C648A /* SPBrandEngageClient.m */; };
-		1991AA7E19D40BF3002C648A /* SPBrandEngageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA0919D40BF3002C648A /* SPBrandEngageViewController.m */; };
-		1991AA7F19D40BF3002C648A /* SPBrandEngageWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA0B19D40BF3002C648A /* SPBrandEngageWebView.m */; };
-		1991AA8019D40BF3002C648A /* SPBufferedLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA0D19D40BF3002C648A /* SPBufferedLogger.m */; };
-		1991AA8119D40BF3002C648A /* SPCallbackSendingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA0F19D40BF3002C648A /* SPCallbackSendingOperation.m */; };
-		1991AA8219D40BF3002C648A /* SPCloseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA1119D40BF3002C648A /* SPCloseButton.m */; };
-		1991AA8319D40BF3002C648A /* SPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA1319D40BF3002C648A /* SPConstants.m */; };
-		1991AA8419D40BF3002C648A /* SPCountdownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA1519D40BF3002C648A /* SPCountdownView.m */; };
-		1991AA8519D40BF3002C648A /* SPCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA1719D40BF3002C648A /* SPCredentials.m */; };
-		1991AA8619D40BF3002C648A /* SPCredentialsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA1919D40BF3002C648A /* SPCredentialsManager.m */; };
-		1991AA8719D40BF3002C648A /* SPHostAppBundleParametersProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA1B19D40BF3002C648A /* SPHostAppBundleParametersProvider.m */; };
-		1991AA8819D40BF3002C648A /* SPInterstitialClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA1D19D40BF3002C648A /* SPInterstitialClient.m */; };
-		1991AA8919D40BF3002C648A /* SPInterstitialEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA2019D40BF3002C648A /* SPInterstitialEvent.m */; };
-		1991AA8A19D40BF3002C648A /* SPInterstitialEventHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA2219D40BF3002C648A /* SPInterstitialEventHub.m */; };
-		1991AA8B19D40BF3002C648A /* SPInterstitialOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA2519D40BF3002C648A /* SPInterstitialOffer.m */; };
-		1991AA8C19D40BF3002C648A /* SPInterstitialResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA2719D40BF3002C648A /* SPInterstitialResponse.m */; };
-		1991AA8D19D40BF3002C648A /* SPJailbreakStatusProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA2919D40BF3002C648A /* SPJailbreakStatusProvider.m */; };
-		1991AA8E19D40BF3002C648A /* SPLoadingIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA2B19D40BF3002C648A /* SPLoadingIndicator.m */; };
-		1991AA8F19D40BF3002C648A /* SPLocaleParametersProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA2D19D40BF3002C648A /* SPLocaleParametersProvider.m */; };
-		1991AA9019D40BF3002C648A /* SPLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA3019D40BF3002C648A /* SPLogger.m */; };
-		1991AA9119D40BF3002C648A /* SPMacAddressProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA3219D40BF3002C648A /* SPMacAddressProvider.m */; };
-		1991AA9219D40BF3002C648A /* SPMD5MacAddressProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA3419D40BF3002C648A /* SPMD5MacAddressProvider.m */; };
-		1991AA9319D40BF3002C648A /* SPMediationCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA3619D40BF3002C648A /* SPMediationCoordinator.m */; };
-		1991AA9419D40BF3002C648A /* SPMicroBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA3819D40BF3002C648A /* SPMicroBrowserViewController.m */; };
-		1991AA9519D40BF3002C648A /* SPNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA3A19D40BF3002C648A /* SPNetworkOperation.m */; };
-		1991AA9619D40BF3002C648A /* SPNetworkParametersProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA3C19D40BF3002C648A /* SPNetworkParametersProvider.m */; };
-		1991AA9719D40BF3002C648A /* SPOfferWallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA3E19D40BF3002C648A /* SPOfferWallViewController.m */; };
-		1991AA9819D40BF3002C648A /* SponsorPaySDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA4019D40BF3002C648A /* SponsorPaySDK.m */; };
-		1991AA9919D40BF3002C648A /* SPPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA4219D40BF3002C648A /* SPPersistence.m */; };
-		1991AA9A19D40BF3002C648A /* SPRandomID.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA4419D40BF3002C648A /* SPRandomID.m */; };
-		1991AA9B19D40BF3002C648A /* SPReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA4619D40BF3002C648A /* SPReachability.m */; };
-		1991AA9C19D40BF3002C648A /* SPResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA4819D40BF3002C648A /* SPResourceLoader.m */; };
-		1991AA9D19D40BF3002C648A /* SPSchemeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA4B19D40BF3002C648A /* SPSchemeParser.m */; };
-		1991AA9E19D40BF3002C648A /* SPScreenMetricsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA4D19D40BF3002C648A /* SPScreenMetricsProvider.m */; };
-		1991AA9F19D40BF3002C648A /* SPSDKFeaturesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA4F19D40BF3002C648A /* SPSDKFeaturesProvider.m */; };
-		1991AAA019D40BF3002C648A /* SPSDKVersionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA5119D40BF3002C648A /* SPSDKVersionProvider.m */; };
-		1991AAA119D40BF3002C648A /* SPSemanticVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA5319D40BF3002C648A /* SPSemanticVersion.m */; };
-		1991AAA219D40BF3002C648A /* SPSHA1MacAddressProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA5519D40BF3002C648A /* SPSHA1MacAddressProvider.m */; };
-		1991AAA319D40BF3002C648A /* SPSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA5719D40BF3002C648A /* SPSignature.m */; };
-		1991AAA419D40BF3002C648A /* SPSystemLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA5919D40BF3002C648A /* SPSystemLogger.m */; };
-		1991AAA519D40BF3002C648A /* SPSystemParametersProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA5B19D40BF3002C648A /* SPSystemParametersProvider.m */; };
-		1991AAA619D40BF3002C648A /* SPSystemVersionChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA5D19D40BF3002C648A /* SPSystemVersionChecker.m */; };
-		1991AAA719D40BF3002C648A /* SPTargetedNotificationFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA5F19D40BF3002C648A /* SPTargetedNotificationFilter.m */; };
-		1991AAA819D40BF3002C648A /* SPToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA6119D40BF3002C648A /* SPToast.m */; };
-		1991AAA919D40BF3002C648A /* SPTPNGenericAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA6319D40BF3002C648A /* SPTPNGenericAdapter.m */; };
-		1991AAAA19D40BF3002C648A /* SPTPNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA6519D40BF3002C648A /* SPTPNManager.m */; };
-		1991AAAB19D40BF3002C648A /* SPTPNMediationTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA6719D40BF3002C648A /* SPTPNMediationTypes.m */; };
-		1991AAAC19D40BF3002C648A /* SPURLGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA6A19D40BF3002C648A /* SPURLGenerator.m */; };
-		1991AAAD19D40BF3002C648A /* SPVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA6E19D40BF3002C648A /* SPVideoPlayerViewController.m */; };
-		1991AAAE19D40BF3002C648A /* SPVirtualCurrencyServerConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1991AA7019D40BF3002C648A /* SPVirtualCurrencyServerConnector.m */; };
 		1991AAB019D40C4C002C648A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1991AAAF19D40C4C002C648A /* CoreGraphics.framework */; };
 		1991AAB219D40C54002C648A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1991AAB119D40C54002C648A /* QuartzCore.framework */; };
 		1991AAB419D40C5E002C648A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1991AAB319D40C5D002C648A /* MediaPlayer.framework */; };
@@ -345,141 +284,6 @@
 		1991A9D819D40B65002C648A /* SPOffersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPOffersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1991A9DD19D40B65002C648A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1991A9DE19D40B65002C648A /* SPOffersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPOffersTests.m; sourceTree = "<group>"; };
-		1991A9EA19D40BF3002C648A /* LoadableCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadableCategory.h; sourceTree = "<group>"; };
-		1991A9EB19D40BF3002C648A /* NSDictionary+SPSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SPSerialization.h"; sourceTree = "<group>"; };
-		1991A9EC19D40BF3002C648A /* NSDictionary+SPSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SPSerialization.m"; sourceTree = "<group>"; };
-		1991A9ED19D40BF3002C648A /* NSString+SPURLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SPURLEncoding.h"; sourceTree = "<group>"; };
-		1991A9EE19D40BF3002C648A /* NSString+SPURLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SPURLEncoding.m"; sourceTree = "<group>"; };
-		1991A9EF19D40BF3002C648A /* NSURL+SPDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+SPDescription.h"; sourceTree = "<group>"; };
-		1991A9F019D40BF3002C648A /* NSURL+SPDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+SPDescription.m"; sourceTree = "<group>"; };
-		1991A9F119D40BF3002C648A /* NSURL+SPParametersParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+SPParametersParsing.h"; sourceTree = "<group>"; };
-		1991A9F219D40BF3002C648A /* NSURL+SPParametersParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+SPParametersParsing.m"; sourceTree = "<group>"; };
-		1991A9F419D40BF3002C648A /* SPCloseX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SPCloseX.png; sourceTree = "<group>"; };
-		1991A9F519D40BF3002C648A /* SP_SDK_versions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SP_SDK_versions.h; sourceTree = "<group>"; };
-		1991A9F619D40BF3002C648A /* SP_URL_scheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SP_URL_scheme.h; sourceTree = "<group>"; };
-		1991A9F719D40BF3002C648A /* SPActionIdValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPActionIdValidator.h; sourceTree = "<group>"; };
-		1991A9F819D40BF3002C648A /* SPActionIdValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPActionIdValidator.m; sourceTree = "<group>"; };
-		1991A9F919D40BF3002C648A /* SPAdvertisementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAdvertisementViewController.h; sourceTree = "<group>"; };
-		1991A9FA19D40BF3002C648A /* SPAdvertisementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAdvertisementViewController.m; sourceTree = "<group>"; };
-		1991A9FB19D40BF3002C648A /* SPAdvertisementViewController_SDKPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAdvertisementViewController_SDKPrivate.h; sourceTree = "<group>"; };
-		1991A9FC19D40BF3002C648A /* SPAdvertisementViewControllerSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAdvertisementViewControllerSubclass.h; sourceTree = "<group>"; };
-		1991A9FD19D40BF3002C648A /* SPAdvertiserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAdvertiserManager.h; sourceTree = "<group>"; };
-		1991A9FE19D40BF3002C648A /* SPAdvertiserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAdvertiserManager.m; sourceTree = "<group>"; };
-		1991A9FF19D40BF3002C648A /* SPAppIdValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAppIdValidator.h; sourceTree = "<group>"; };
-		1991AA0019D40BF3002C648A /* SPAppIdValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAppIdValidator.m; sourceTree = "<group>"; };
-		1991AA0119D40BF3002C648A /* SPAppleAdvertiserIDProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAppleAdvertiserIDProvider.h; sourceTree = "<group>"; };
-		1991AA0219D40BF3002C648A /* SPAppleAdvertiserIDProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAppleAdvertiserIDProvider.m; sourceTree = "<group>"; };
-		1991AA0319D40BF3002C648A /* SPBaseNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBaseNetwork.h; sourceTree = "<group>"; };
-		1991AA0419D40BF3002C648A /* SPBaseNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBaseNetwork.m; sourceTree = "<group>"; };
-		1991AA0519D40BF3002C648A /* SPBrandEngageClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBrandEngageClient.h; sourceTree = "<group>"; };
-		1991AA0619D40BF3002C648A /* SPBrandEngageClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBrandEngageClient.m; sourceTree = "<group>"; };
-		1991AA0719D40BF3002C648A /* SPBrandEngageClient_SDKPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBrandEngageClient_SDKPrivate.h; sourceTree = "<group>"; };
-		1991AA0819D40BF3002C648A /* SPBrandEngageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBrandEngageViewController.h; sourceTree = "<group>"; };
-		1991AA0919D40BF3002C648A /* SPBrandEngageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBrandEngageViewController.m; sourceTree = "<group>"; };
-		1991AA0A19D40BF3002C648A /* SPBrandEngageWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBrandEngageWebView.h; sourceTree = "<group>"; };
-		1991AA0B19D40BF3002C648A /* SPBrandEngageWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBrandEngageWebView.m; sourceTree = "<group>"; };
-		1991AA0C19D40BF3002C648A /* SPBufferedLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBufferedLogger.h; sourceTree = "<group>"; };
-		1991AA0D19D40BF3002C648A /* SPBufferedLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBufferedLogger.m; sourceTree = "<group>"; };
-		1991AA0E19D40BF3002C648A /* SPCallbackSendingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCallbackSendingOperation.h; sourceTree = "<group>"; };
-		1991AA0F19D40BF3002C648A /* SPCallbackSendingOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCallbackSendingOperation.m; sourceTree = "<group>"; };
-		1991AA1019D40BF3002C648A /* SPCloseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCloseButton.h; sourceTree = "<group>"; };
-		1991AA1119D40BF3002C648A /* SPCloseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCloseButton.m; sourceTree = "<group>"; };
-		1991AA1219D40BF3002C648A /* SPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPConstants.h; sourceTree = "<group>"; };
-		1991AA1319D40BF3002C648A /* SPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPConstants.m; sourceTree = "<group>"; };
-		1991AA1419D40BF3002C648A /* SPCountdownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCountdownView.h; sourceTree = "<group>"; };
-		1991AA1519D40BF3002C648A /* SPCountdownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCountdownView.m; sourceTree = "<group>"; };
-		1991AA1619D40BF3002C648A /* SPCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCredentials.h; sourceTree = "<group>"; };
-		1991AA1719D40BF3002C648A /* SPCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCredentials.m; sourceTree = "<group>"; };
-		1991AA1819D40BF3002C648A /* SPCredentialsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCredentialsManager.h; sourceTree = "<group>"; };
-		1991AA1919D40BF3002C648A /* SPCredentialsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCredentialsManager.m; sourceTree = "<group>"; };
-		1991AA1A19D40BF3002C648A /* SPHostAppBundleParametersProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHostAppBundleParametersProvider.h; sourceTree = "<group>"; };
-		1991AA1B19D40BF3002C648A /* SPHostAppBundleParametersProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHostAppBundleParametersProvider.m; sourceTree = "<group>"; };
-		1991AA1C19D40BF3002C648A /* SPInterstitialClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPInterstitialClient.h; sourceTree = "<group>"; };
-		1991AA1D19D40BF3002C648A /* SPInterstitialClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPInterstitialClient.m; sourceTree = "<group>"; };
-		1991AA1E19D40BF3002C648A /* SPInterstitialClient_SDKPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPInterstitialClient_SDKPrivate.h; sourceTree = "<group>"; };
-		1991AA1F19D40BF3002C648A /* SPInterstitialEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPInterstitialEvent.h; sourceTree = "<group>"; };
-		1991AA2019D40BF3002C648A /* SPInterstitialEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPInterstitialEvent.m; sourceTree = "<group>"; };
-		1991AA2119D40BF3002C648A /* SPInterstitialEventHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPInterstitialEventHub.h; sourceTree = "<group>"; };
-		1991AA2219D40BF3002C648A /* SPInterstitialEventHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPInterstitialEventHub.m; sourceTree = "<group>"; };
-		1991AA2319D40BF3002C648A /* SPInterstitialNetworkAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPInterstitialNetworkAdapter.h; sourceTree = "<group>"; };
-		1991AA2419D40BF3002C648A /* SPInterstitialOffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPInterstitialOffer.h; sourceTree = "<group>"; };
-		1991AA2519D40BF3002C648A /* SPInterstitialOffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPInterstitialOffer.m; sourceTree = "<group>"; };
-		1991AA2619D40BF3002C648A /* SPInterstitialResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPInterstitialResponse.h; sourceTree = "<group>"; };
-		1991AA2719D40BF3002C648A /* SPInterstitialResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPInterstitialResponse.m; sourceTree = "<group>"; };
-		1991AA2819D40BF3002C648A /* SPJailbreakStatusProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPJailbreakStatusProvider.h; sourceTree = "<group>"; };
-		1991AA2919D40BF3002C648A /* SPJailbreakStatusProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPJailbreakStatusProvider.m; sourceTree = "<group>"; };
-		1991AA2A19D40BF3002C648A /* SPLoadingIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLoadingIndicator.h; sourceTree = "<group>"; };
-		1991AA2B19D40BF3002C648A /* SPLoadingIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLoadingIndicator.m; sourceTree = "<group>"; };
-		1991AA2C19D40BF3002C648A /* SPLocaleParametersProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLocaleParametersProvider.h; sourceTree = "<group>"; };
-		1991AA2D19D40BF3002C648A /* SPLocaleParametersProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLocaleParametersProvider.m; sourceTree = "<group>"; };
-		1991AA2E19D40BF3002C648A /* SPLogAppender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLogAppender.h; sourceTree = "<group>"; };
-		1991AA2F19D40BF3002C648A /* SPLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLogger.h; sourceTree = "<group>"; };
-		1991AA3019D40BF3002C648A /* SPLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLogger.m; sourceTree = "<group>"; };
-		1991AA3119D40BF3002C648A /* SPMacAddressProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMacAddressProvider.h; sourceTree = "<group>"; };
-		1991AA3219D40BF3002C648A /* SPMacAddressProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMacAddressProvider.m; sourceTree = "<group>"; };
-		1991AA3319D40BF3002C648A /* SPMD5MacAddressProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMD5MacAddressProvider.h; sourceTree = "<group>"; };
-		1991AA3419D40BF3002C648A /* SPMD5MacAddressProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMD5MacAddressProvider.m; sourceTree = "<group>"; };
-		1991AA3519D40BF3002C648A /* SPMediationCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMediationCoordinator.h; sourceTree = "<group>"; };
-		1991AA3619D40BF3002C648A /* SPMediationCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMediationCoordinator.m; sourceTree = "<group>"; };
-		1991AA3719D40BF3002C648A /* SPMicroBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMicroBrowserViewController.h; sourceTree = "<group>"; };
-		1991AA3819D40BF3002C648A /* SPMicroBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMicroBrowserViewController.m; sourceTree = "<group>"; };
-		1991AA3919D40BF3002C648A /* SPNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNetworkOperation.h; sourceTree = "<group>"; };
-		1991AA3A19D40BF3002C648A /* SPNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNetworkOperation.m; sourceTree = "<group>"; };
-		1991AA3B19D40BF3002C648A /* SPNetworkParametersProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNetworkParametersProvider.h; sourceTree = "<group>"; };
-		1991AA3C19D40BF3002C648A /* SPNetworkParametersProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNetworkParametersProvider.m; sourceTree = "<group>"; };
-		1991AA3D19D40BF3002C648A /* SPOfferWallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPOfferWallViewController.h; sourceTree = "<group>"; };
-		1991AA3E19D40BF3002C648A /* SPOfferWallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPOfferWallViewController.m; sourceTree = "<group>"; };
-		1991AA3F19D40BF3002C648A /* SponsorPaySDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SponsorPaySDK.h; sourceTree = "<group>"; };
-		1991AA4019D40BF3002C648A /* SponsorPaySDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SponsorPaySDK.m; sourceTree = "<group>"; };
-		1991AA4119D40BF3002C648A /* SPPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPersistence.h; sourceTree = "<group>"; };
-		1991AA4219D40BF3002C648A /* SPPersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPersistence.m; sourceTree = "<group>"; };
-		1991AA4319D40BF3002C648A /* SPRandomID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRandomID.h; sourceTree = "<group>"; };
-		1991AA4419D40BF3002C648A /* SPRandomID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRandomID.m; sourceTree = "<group>"; };
-		1991AA4519D40BF3002C648A /* SPReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPReachability.h; sourceTree = "<group>"; };
-		1991AA4619D40BF3002C648A /* SPReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPReachability.m; sourceTree = "<group>"; };
-		1991AA4719D40BF3002C648A /* SPResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPResourceLoader.h; sourceTree = "<group>"; };
-		1991AA4819D40BF3002C648A /* SPResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPResourceLoader.m; sourceTree = "<group>"; };
-		1991AA4919D40BF3002C648A /* SPRewardedVideoNetworkAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRewardedVideoNetworkAdapter.h; sourceTree = "<group>"; };
-		1991AA4A19D40BF3002C648A /* SPSchemeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSchemeParser.h; sourceTree = "<group>"; };
-		1991AA4B19D40BF3002C648A /* SPSchemeParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSchemeParser.m; sourceTree = "<group>"; };
-		1991AA4C19D40BF3002C648A /* SPScreenMetricsProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPScreenMetricsProvider.h; sourceTree = "<group>"; };
-		1991AA4D19D40BF3002C648A /* SPScreenMetricsProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPScreenMetricsProvider.m; sourceTree = "<group>"; };
-		1991AA4E19D40BF3002C648A /* SPSDKFeaturesProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSDKFeaturesProvider.h; sourceTree = "<group>"; };
-		1991AA4F19D40BF3002C648A /* SPSDKFeaturesProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSDKFeaturesProvider.m; sourceTree = "<group>"; };
-		1991AA5019D40BF3002C648A /* SPSDKVersionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSDKVersionProvider.h; sourceTree = "<group>"; };
-		1991AA5119D40BF3002C648A /* SPSDKVersionProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSDKVersionProvider.m; sourceTree = "<group>"; };
-		1991AA5219D40BF3002C648A /* SPSemanticVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSemanticVersion.h; sourceTree = "<group>"; };
-		1991AA5319D40BF3002C648A /* SPSemanticVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSemanticVersion.m; sourceTree = "<group>"; };
-		1991AA5419D40BF3002C648A /* SPSHA1MacAddressProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSHA1MacAddressProvider.h; sourceTree = "<group>"; };
-		1991AA5519D40BF3002C648A /* SPSHA1MacAddressProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSHA1MacAddressProvider.m; sourceTree = "<group>"; };
-		1991AA5619D40BF3002C648A /* SPSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSignature.h; sourceTree = "<group>"; };
-		1991AA5719D40BF3002C648A /* SPSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSignature.m; sourceTree = "<group>"; };
-		1991AA5819D40BF3002C648A /* SPSystemLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSystemLogger.h; sourceTree = "<group>"; };
-		1991AA5919D40BF3002C648A /* SPSystemLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSystemLogger.m; sourceTree = "<group>"; };
-		1991AA5A19D40BF3002C648A /* SPSystemParametersProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSystemParametersProvider.h; sourceTree = "<group>"; };
-		1991AA5B19D40BF3002C648A /* SPSystemParametersProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSystemParametersProvider.m; sourceTree = "<group>"; };
-		1991AA5C19D40BF3002C648A /* SPSystemVersionChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSystemVersionChecker.h; sourceTree = "<group>"; };
-		1991AA5D19D40BF3002C648A /* SPSystemVersionChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSystemVersionChecker.m; sourceTree = "<group>"; };
-		1991AA5E19D40BF3002C648A /* SPTargetedNotificationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTargetedNotificationFilter.h; sourceTree = "<group>"; };
-		1991AA5F19D40BF3002C648A /* SPTargetedNotificationFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTargetedNotificationFilter.m; sourceTree = "<group>"; };
-		1991AA6019D40BF3002C648A /* SPToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPToast.h; sourceTree = "<group>"; };
-		1991AA6119D40BF3002C648A /* SPToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPToast.m; sourceTree = "<group>"; };
-		1991AA6219D40BF3002C648A /* SPTPNGenericAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTPNGenericAdapter.h; sourceTree = "<group>"; };
-		1991AA6319D40BF3002C648A /* SPTPNGenericAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTPNGenericAdapter.m; sourceTree = "<group>"; };
-		1991AA6419D40BF3002C648A /* SPTPNManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTPNManager.h; sourceTree = "<group>"; };
-		1991AA6519D40BF3002C648A /* SPTPNManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTPNManager.m; sourceTree = "<group>"; };
-		1991AA6619D40BF3002C648A /* SPTPNMediationTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTPNMediationTypes.h; sourceTree = "<group>"; };
-		1991AA6719D40BF3002C648A /* SPTPNMediationTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTPNMediationTypes.m; sourceTree = "<group>"; };
-		1991AA6819D40BF3002C648A /* SPTPNVideoAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTPNVideoAdapter.h; sourceTree = "<group>"; };
-		1991AA6919D40BF3002C648A /* SPURLGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPURLGenerator.h; sourceTree = "<group>"; };
-		1991AA6A19D40BF3002C648A /* SPURLGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPURLGenerator.m; sourceTree = "<group>"; };
-		1991AA6B19D40BF3002C648A /* SPUrlParametersProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUrlParametersProvider.h; sourceTree = "<group>"; };
-		1991AA6C19D40BF3002C648A /* SPVideoPlayerStateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoPlayerStateDelegate.h; sourceTree = "<group>"; };
-		1991AA6D19D40BF3002C648A /* SPVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoPlayerViewController.h; sourceTree = "<group>"; };
-		1991AA6E19D40BF3002C648A /* SPVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVideoPlayerViewController.m; sourceTree = "<group>"; };
-		1991AA6F19D40BF3002C648A /* SPVirtualCurrencyServerConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVirtualCurrencyServerConnector.h; sourceTree = "<group>"; };
-		1991AA7019D40BF3002C648A /* SPVirtualCurrencyServerConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVirtualCurrencyServerConnector.m; sourceTree = "<group>"; };
-		1991AA7119D40BF3002C648A /* SPVirtualCurrencyServerConnector_SDKPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVirtualCurrencyServerConnector_SDKPrivate.h; sourceTree = "<group>"; };
 		1991AAAF19D40C4C002C648A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1991AAB119D40C54002C648A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1991AAB319D40C5D002C648A /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -893,159 +697,8 @@
 				1967C92919D5BB36001E6656 /* SDWebImage */,
 				1967C8CC19D44EA8001E6656 /* OpenUDID-master */,
 				1967C8B219D438C5001E6656 /* Reachability */,
-				1991A9E919D40BF3002C648A /* sponsorpay-sdk */,
 			);
 			path = External;
-			sourceTree = "<group>";
-		};
-		1991A9E919D40BF3002C648A /* sponsorpay-sdk */ = {
-			isa = PBXGroup;
-			children = (
-				1991A9EA19D40BF3002C648A /* LoadableCategory.h */,
-				1991A9EB19D40BF3002C648A /* NSDictionary+SPSerialization.h */,
-				1991A9EC19D40BF3002C648A /* NSDictionary+SPSerialization.m */,
-				1991A9ED19D40BF3002C648A /* NSString+SPURLEncoding.h */,
-				1991A9EE19D40BF3002C648A /* NSString+SPURLEncoding.m */,
-				1991A9EF19D40BF3002C648A /* NSURL+SPDescription.h */,
-				1991A9F019D40BF3002C648A /* NSURL+SPDescription.m */,
-				1991A9F119D40BF3002C648A /* NSURL+SPParametersParsing.h */,
-				1991A9F219D40BF3002C648A /* NSURL+SPParametersParsing.m */,
-				1991A9F319D40BF3002C648A /* Resources */,
-				1991A9F519D40BF3002C648A /* SP_SDK_versions.h */,
-				1991A9F619D40BF3002C648A /* SP_URL_scheme.h */,
-				1991A9F719D40BF3002C648A /* SPActionIdValidator.h */,
-				1991A9F819D40BF3002C648A /* SPActionIdValidator.m */,
-				1991A9F919D40BF3002C648A /* SPAdvertisementViewController.h */,
-				1991A9FA19D40BF3002C648A /* SPAdvertisementViewController.m */,
-				1991A9FB19D40BF3002C648A /* SPAdvertisementViewController_SDKPrivate.h */,
-				1991A9FC19D40BF3002C648A /* SPAdvertisementViewControllerSubclass.h */,
-				1991A9FD19D40BF3002C648A /* SPAdvertiserManager.h */,
-				1991A9FE19D40BF3002C648A /* SPAdvertiserManager.m */,
-				1991A9FF19D40BF3002C648A /* SPAppIdValidator.h */,
-				1991AA0019D40BF3002C648A /* SPAppIdValidator.m */,
-				1991AA0119D40BF3002C648A /* SPAppleAdvertiserIDProvider.h */,
-				1991AA0219D40BF3002C648A /* SPAppleAdvertiserIDProvider.m */,
-				1991AA0319D40BF3002C648A /* SPBaseNetwork.h */,
-				1991AA0419D40BF3002C648A /* SPBaseNetwork.m */,
-				1991AA0519D40BF3002C648A /* SPBrandEngageClient.h */,
-				1991AA0619D40BF3002C648A /* SPBrandEngageClient.m */,
-				1991AA0719D40BF3002C648A /* SPBrandEngageClient_SDKPrivate.h */,
-				1991AA0819D40BF3002C648A /* SPBrandEngageViewController.h */,
-				1991AA0919D40BF3002C648A /* SPBrandEngageViewController.m */,
-				1991AA0A19D40BF3002C648A /* SPBrandEngageWebView.h */,
-				1991AA0B19D40BF3002C648A /* SPBrandEngageWebView.m */,
-				1991AA0C19D40BF3002C648A /* SPBufferedLogger.h */,
-				1991AA0D19D40BF3002C648A /* SPBufferedLogger.m */,
-				1991AA0E19D40BF3002C648A /* SPCallbackSendingOperation.h */,
-				1991AA0F19D40BF3002C648A /* SPCallbackSendingOperation.m */,
-				1991AA1019D40BF3002C648A /* SPCloseButton.h */,
-				1991AA1119D40BF3002C648A /* SPCloseButton.m */,
-				1991AA1219D40BF3002C648A /* SPConstants.h */,
-				1991AA1319D40BF3002C648A /* SPConstants.m */,
-				1991AA1419D40BF3002C648A /* SPCountdownView.h */,
-				1991AA1519D40BF3002C648A /* SPCountdownView.m */,
-				1991AA1619D40BF3002C648A /* SPCredentials.h */,
-				1991AA1719D40BF3002C648A /* SPCredentials.m */,
-				1991AA1819D40BF3002C648A /* SPCredentialsManager.h */,
-				1991AA1919D40BF3002C648A /* SPCredentialsManager.m */,
-				1991AA1A19D40BF3002C648A /* SPHostAppBundleParametersProvider.h */,
-				1991AA1B19D40BF3002C648A /* SPHostAppBundleParametersProvider.m */,
-				1991AA1C19D40BF3002C648A /* SPInterstitialClient.h */,
-				1991AA1D19D40BF3002C648A /* SPInterstitialClient.m */,
-				1991AA1E19D40BF3002C648A /* SPInterstitialClient_SDKPrivate.h */,
-				1991AA1F19D40BF3002C648A /* SPInterstitialEvent.h */,
-				1991AA2019D40BF3002C648A /* SPInterstitialEvent.m */,
-				1991AA2119D40BF3002C648A /* SPInterstitialEventHub.h */,
-				1991AA2219D40BF3002C648A /* SPInterstitialEventHub.m */,
-				1991AA2319D40BF3002C648A /* SPInterstitialNetworkAdapter.h */,
-				1991AA2419D40BF3002C648A /* SPInterstitialOffer.h */,
-				1991AA2519D40BF3002C648A /* SPInterstitialOffer.m */,
-				1991AA2619D40BF3002C648A /* SPInterstitialResponse.h */,
-				1991AA2719D40BF3002C648A /* SPInterstitialResponse.m */,
-				1991AA2819D40BF3002C648A /* SPJailbreakStatusProvider.h */,
-				1991AA2919D40BF3002C648A /* SPJailbreakStatusProvider.m */,
-				1991AA2A19D40BF3002C648A /* SPLoadingIndicator.h */,
-				1991AA2B19D40BF3002C648A /* SPLoadingIndicator.m */,
-				1991AA2C19D40BF3002C648A /* SPLocaleParametersProvider.h */,
-				1991AA2D19D40BF3002C648A /* SPLocaleParametersProvider.m */,
-				1991AA2E19D40BF3002C648A /* SPLogAppender.h */,
-				1991AA2F19D40BF3002C648A /* SPLogger.h */,
-				1991AA3019D40BF3002C648A /* SPLogger.m */,
-				1991AA3119D40BF3002C648A /* SPMacAddressProvider.h */,
-				1991AA3219D40BF3002C648A /* SPMacAddressProvider.m */,
-				1991AA3319D40BF3002C648A /* SPMD5MacAddressProvider.h */,
-				1991AA3419D40BF3002C648A /* SPMD5MacAddressProvider.m */,
-				1991AA3519D40BF3002C648A /* SPMediationCoordinator.h */,
-				1991AA3619D40BF3002C648A /* SPMediationCoordinator.m */,
-				1991AA3719D40BF3002C648A /* SPMicroBrowserViewController.h */,
-				1991AA3819D40BF3002C648A /* SPMicroBrowserViewController.m */,
-				1991AA3919D40BF3002C648A /* SPNetworkOperation.h */,
-				1991AA3A19D40BF3002C648A /* SPNetworkOperation.m */,
-				1991AA3B19D40BF3002C648A /* SPNetworkParametersProvider.h */,
-				1991AA3C19D40BF3002C648A /* SPNetworkParametersProvider.m */,
-				1991AA3D19D40BF3002C648A /* SPOfferWallViewController.h */,
-				1991AA3E19D40BF3002C648A /* SPOfferWallViewController.m */,
-				1991AA3F19D40BF3002C648A /* SponsorPaySDK.h */,
-				1991AA4019D40BF3002C648A /* SponsorPaySDK.m */,
-				1991AA4119D40BF3002C648A /* SPPersistence.h */,
-				1991AA4219D40BF3002C648A /* SPPersistence.m */,
-				1991AA4319D40BF3002C648A /* SPRandomID.h */,
-				1991AA4419D40BF3002C648A /* SPRandomID.m */,
-				1991AA4519D40BF3002C648A /* SPReachability.h */,
-				1991AA4619D40BF3002C648A /* SPReachability.m */,
-				1991AA4719D40BF3002C648A /* SPResourceLoader.h */,
-				1991AA4819D40BF3002C648A /* SPResourceLoader.m */,
-				1991AA4919D40BF3002C648A /* SPRewardedVideoNetworkAdapter.h */,
-				1991AA4A19D40BF3002C648A /* SPSchemeParser.h */,
-				1991AA4B19D40BF3002C648A /* SPSchemeParser.m */,
-				1991AA4C19D40BF3002C648A /* SPScreenMetricsProvider.h */,
-				1991AA4D19D40BF3002C648A /* SPScreenMetricsProvider.m */,
-				1991AA4E19D40BF3002C648A /* SPSDKFeaturesProvider.h */,
-				1991AA4F19D40BF3002C648A /* SPSDKFeaturesProvider.m */,
-				1991AA5019D40BF3002C648A /* SPSDKVersionProvider.h */,
-				1991AA5119D40BF3002C648A /* SPSDKVersionProvider.m */,
-				1991AA5219D40BF3002C648A /* SPSemanticVersion.h */,
-				1991AA5319D40BF3002C648A /* SPSemanticVersion.m */,
-				1991AA5419D40BF3002C648A /* SPSHA1MacAddressProvider.h */,
-				1991AA5519D40BF3002C648A /* SPSHA1MacAddressProvider.m */,
-				1991AA5619D40BF3002C648A /* SPSignature.h */,
-				1991AA5719D40BF3002C648A /* SPSignature.m */,
-				1991AA5819D40BF3002C648A /* SPSystemLogger.h */,
-				1991AA5919D40BF3002C648A /* SPSystemLogger.m */,
-				1991AA5A19D40BF3002C648A /* SPSystemParametersProvider.h */,
-				1991AA5B19D40BF3002C648A /* SPSystemParametersProvider.m */,
-				1991AA5C19D40BF3002C648A /* SPSystemVersionChecker.h */,
-				1991AA5D19D40BF3002C648A /* SPSystemVersionChecker.m */,
-				1991AA5E19D40BF3002C648A /* SPTargetedNotificationFilter.h */,
-				1991AA5F19D40BF3002C648A /* SPTargetedNotificationFilter.m */,
-				1991AA6019D40BF3002C648A /* SPToast.h */,
-				1991AA6119D40BF3002C648A /* SPToast.m */,
-				1991AA6219D40BF3002C648A /* SPTPNGenericAdapter.h */,
-				1991AA6319D40BF3002C648A /* SPTPNGenericAdapter.m */,
-				1991AA6419D40BF3002C648A /* SPTPNManager.h */,
-				1991AA6519D40BF3002C648A /* SPTPNManager.m */,
-				1991AA6619D40BF3002C648A /* SPTPNMediationTypes.h */,
-				1991AA6719D40BF3002C648A /* SPTPNMediationTypes.m */,
-				1991AA6819D40BF3002C648A /* SPTPNVideoAdapter.h */,
-				1991AA6919D40BF3002C648A /* SPURLGenerator.h */,
-				1991AA6A19D40BF3002C648A /* SPURLGenerator.m */,
-				1991AA6B19D40BF3002C648A /* SPUrlParametersProvider.h */,
-				1991AA6C19D40BF3002C648A /* SPVideoPlayerStateDelegate.h */,
-				1991AA6D19D40BF3002C648A /* SPVideoPlayerViewController.h */,
-				1991AA6E19D40BF3002C648A /* SPVideoPlayerViewController.m */,
-				1991AA6F19D40BF3002C648A /* SPVirtualCurrencyServerConnector.h */,
-				1991AA7019D40BF3002C648A /* SPVirtualCurrencyServerConnector.m */,
-				1991AA7119D40BF3002C648A /* SPVirtualCurrencyServerConnector_SDKPrivate.h */,
-			);
-			path = "sponsorpay-sdk";
-			sourceTree = "<group>";
-		};
-		1991A9F319D40BF3002C648A /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				1991A9F419D40BF3002C648A /* SPCloseX.png */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1130,7 +783,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1967C96A19D5E49C001E6656 /* dot@3x.png in Resources */,
-				1991AA7619D40BF3002C648A /* SPCloseX.png in Resources */,
 				1991A9CE19D40B64002C648A /* Main.storyboard in Resources */,
 				1967C8DA19D462DA001E6656 /* configuration-dist.json in Resources */,
 				1967C96819D5E49C001E6656 /* dot.png in Resources */,
@@ -1163,135 +815,75 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1991AAAE19D40BF3002C648A /* SPVirtualCurrencyServerConnector.m in Sources */,
 				1967C86B19D431B9001E6656 /* NSString+JMFExtensions.m in Sources */,
-				1991AAAA19D40BF3002C648A /* SPTPNManager.m in Sources */,
 				1967C87A19D43203001E6656 /* SPMobileAPIBaseLoggedRequest.m in Sources */,
 				1967C94E19D5BB36001E6656 /* SDWebImageCompat.m in Sources */,
 				1967C86719D431B9001E6656 /* JMFUtilities.m in Sources */,
-				1991AA8619D40BF3002C648A /* SPCredentialsManager.m in Sources */,
 				1967C86919D431B9001E6656 /* NSData+JMFExtensions.m in Sources */,
 				1967C86619D431B9001E6656 /* jMFModuleManager.m in Sources */,
 				1967C89C19D4360C001E6656 /* SPConfirmationDialog.m in Sources */,
-				1991AA9E19D40BF3002C648A /* SPScreenMetricsProvider.m in Sources */,
-				1991AA8319D40BF3002C648A /* SPConstants.m in Sources */,
 				1967C95019D5BB36001E6656 /* SDWebImageDownloader.m in Sources */,
 				1967C87C19D43203001E6656 /* SPMobileAPIBaseRequest.m in Sources */,
 				1967C86A19D431B9001E6656 /* NSDictionary+JMFExtensions.m in Sources */,
 				1967C86219D431B9001E6656 /* JMFIdentity.m in Sources */,
-				1991AAAB19D40BF3002C648A /* SPTPNMediationTypes.m in Sources */,
 				1967C94F19D5BB36001E6656 /* SDWebImageDecoder.m in Sources */,
 				1967C8FD19D594CA001E6656 /* SPOfferType.m in Sources */,
-				1991AA9719D40BF3002C648A /* SPOfferWallViewController.m in Sources */,
-				1991AA7819D40BF3002C648A /* SPAdvertisementViewController.m in Sources */,
 				1967C95819D5BB36001E6656 /* UIImageView+HighlightedWebCache.m in Sources */,
 				1967C85F19D431B9001E6656 /* JMFNetworkManager.m in Sources */,
 				1967C95619D5BB36001E6656 /* UIImage+MultiFormat.m in Sources */,
 				1967C8B819D43967001E6656 /* UIView+GestureRecognizers.m in Sources */,
-				1991AAAC19D40BF3002C648A /* SPURLGenerator.m in Sources */,
 				1967C8FF19D59CB8001E6656 /* SPOffer.m in Sources */,
 				1967C87919D43203001E6656 /* SPMobileAPIAdapter.m in Sources */,
 				1967C8D019D44EA8001E6656 /* OpenUDID.m in Sources */,
 				1967C95F19D5E181001E6656 /* SPLoadingView.m in Sources */,
-				1991AA8219D40BF3002C648A /* SPCloseButton.m in Sources */,
-				1991AA7C19D40BF3002C648A /* SPBaseNetwork.m in Sources */,
 				1967C8A719D436AB001E6656 /* UIColor+SPAdditions.m in Sources */,
-				1991AA7419D40BF3002C648A /* NSURL+SPDescription.m in Sources */,
-				1991AA9C19D40BF3002C648A /* SPResourceLoader.m in Sources */,
-				1991AAA119D40BF3002C648A /* SPSemanticVersion.m in Sources */,
-				1991AA9B19D40BF3002C648A /* SPReachability.m in Sources */,
 				1967C86519D431B9001E6656 /* JMFModule.m in Sources */,
-				1991AA7A19D40BF3002C648A /* SPAppIdValidator.m in Sources */,
 				1967C8B119D43875001E6656 /* UIView+FrameTransform.m in Sources */,
 				1967C8A419D4368F001E6656 /* UIView+Shadow.m in Sources */,
-				1991AAA819D40BF3002C648A /* SPToast.m in Sources */,
-				1991AA9019D40BF3002C648A /* SPLogger.m in Sources */,
 				1967C8AA19D43700001E6656 /* UIFont+SPAdditions.m in Sources */,
 				1967C95A19D5BB36001E6656 /* UIView+WebCacheOperation.m in Sources */,
 				1967C88119D43252001E6656 /* SPAuthenticationManager.m in Sources */,
 				1967C88419D43294001E6656 /* SPUtility.m in Sources */,
-				1991AA8D19D40BF3002C648A /* SPJailbreakStatusProvider.m in Sources */,
-				1991AAA219D40BF3002C648A /* SPSHA1MacAddressProvider.m in Sources */,
 				1967C95219D5BB36001E6656 /* SDWebImageManager.m in Sources */,
 				1967C8D119D44EA8001E6656 /* README.md in Sources */,
-				1991AA9519D40BF3002C648A /* SPNetworkOperation.m in Sources */,
-				1991AA8419D40BF3002C648A /* SPCountdownView.m in Sources */,
-				1991AAA719D40BF3002C648A /* SPTargetedNotificationFilter.m in Sources */,
 				1967C85D19D431B9001E6656 /* JMFNetRequest.m in Sources */,
-				1991AA8F19D40BF3002C648A /* SPLocaleParametersProvider.m in Sources */,
-				1991AA7D19D40BF3002C648A /* SPBrandEngageClient.m in Sources */,
-				1991AAAD19D40BF3002C648A /* SPVideoPlayerViewController.m in Sources */,
-				1991AA7219D40BF3002C648A /* NSDictionary+SPSerialization.m in Sources */,
 				1967C86C19D431B9001E6656 /* NSURL+JMFExtensions.m in Sources */,
-				1991AA9619D40BF3002C648A /* SPNetworkParametersProvider.m in Sources */,
 				1967C94B19D5BB36001E6656 /* MKAnnotationView+WebCache.m in Sources */,
-				1991AAA319D40BF3002C648A /* SPSignature.m in Sources */,
-				1991AA8519D40BF3002C648A /* SPCredentials.m in Sources */,
-				1991AA7519D40BF3002C648A /* NSURL+SPParametersParsing.m in Sources */,
 				1967C89519D43532001E6656 /* SPLocalizationManager.m in Sources */,
-				1991AAA519D40BF3002C648A /* SPSystemParametersProvider.m in Sources */,
 				1967C94D19D5BB36001E6656 /* SDImageCache.m in Sources */,
-				1991AA9419D40BF3002C648A /* SPMicroBrowserViewController.m in Sources */,
-				1991AA8A19D40BF3002C648A /* SPInterstitialEventHub.m in Sources */,
 				1991A9CB19D40B64002C648A /* SPFormViewController.m in Sources */,
 				1967C95119D5BB36001E6656 /* SDWebImageDownloaderOperation.m in Sources */,
 				1967C85E19D431B9001E6656 /* JMFNetResponse.m in Sources */,
-				1991AA7B19D40BF3002C648A /* SPAppleAdvertiserIDProvider.m in Sources */,
 				1967C89219D434E2001E6656 /* SPAlertManager.m in Sources */,
 				1967C8B519D438C5001E6656 /* Reachability.m in Sources */,
-				1991AA9919D40BF3002C648A /* SPPersistence.m in Sources */,
 				1967C95419D5BB36001E6656 /* UIButton+WebCache.m in Sources */,
-				1991AA7919D40BF3002C648A /* SPAdvertiserManager.m in Sources */,
-				1991AA7719D40BF3002C648A /* SPActionIdValidator.m in Sources */,
 				1967C86319D431B9001E6656 /* JMFKeychainUtils.m in Sources */,
-				1991AAA019D40BF3002C648A /* SPSDKVersionProvider.m in Sources */,
-				1991AA8B19D40BF3002C648A /* SPInterstitialOffer.m in Sources */,
 				1967C8F419D5942B001E6656 /* SPOfferInformation.m in Sources */,
 				1967C8FB19D594CA001E6656 /* SPOfferThumbnail.m in Sources */,
-				1991AAA619D40BF3002C648A /* SPSystemVersionChecker.m in Sources */,
-				1991AAA419D40BF3002C648A /* SPSystemLogger.m in Sources */,
 				1967C8CB19D4463F001E6656 /* NSObject+setValuesForKeysWithJSONDictionary.m in Sources */,
 				1967C86819D431B9001E6656 /* JMFXMLNode.m in Sources */,
 				1967C90519D5AB4A001E6656 /* SPOfferListViewController.m in Sources */,
-				1991AA9D19D40BF3002C648A /* SPSchemeParser.m in Sources */,
-				1991AA7F19D40BF3002C648A /* SPBrandEngageWebView.m in Sources */,
 				1967C88E19D43448001E6656 /* SPError.m in Sources */,
-				1991AA8719D40BF3002C648A /* SPHostAppBundleParametersProvider.m in Sources */,
-				1991AA8019D40BF3002C648A /* SPBufferedLogger.m in Sources */,
-				1991AA9F19D40BF3002C648A /* SPSDKFeaturesProvider.m in Sources */,
 				1967C94C19D5BB36001E6656 /* NSData+ImageContentType.m in Sources */,
 				1967C86419D431B9001E6656 /* JMFLoadingOverlay.m in Sources */,
 				1967C8F119D59228001E6656 /* SPOfferResponse.m in Sources */,
 				1967C8BD19D440CA001E6656 /* SPSendFormRequest.m in Sources */,
-				1991AA7E19D40BF3002C648A /* SPBrandEngageViewController.m in Sources */,
-				1991AA8119D40BF3002C648A /* SPCallbackSendingOperation.m in Sources */,
 				1991A9C819D40B64002C648A /* AppDelegate.m in Sources */,
-				1991AA9219D40BF3002C648A /* SPMD5MacAddressProvider.m in Sources */,
 				1967C8AD19D4372C001E6656 /* UIButton+SPAdditions.m in Sources */,
 				1967C86119D431B9001E6656 /* DebugLoggingModule.m in Sources */,
-				1991AA8E19D40BF3002C648A /* SPLoadingIndicator.m in Sources */,
-				1991AA9119D40BF3002C648A /* SPMacAddressProvider.m in Sources */,
 				1967C95919D5BB36001E6656 /* UIImageView+WebCache.m in Sources */,
-				1991AA7319D40BF3002C648A /* NSString+SPURLEncoding.m in Sources */,
 				1967C8A119D43677001E6656 /* UIView+CustomNib.m in Sources */,
 				1967C95519D5BB36001E6656 /* UIImage+GIF.m in Sources */,
-				1991AA9A19D40BF3002C648A /* SPRandomID.m in Sources */,
 				1967C95719D5BB36001E6656 /* UIImage+WebP.m in Sources */,
 				1967C87B19D43203001E6656 /* SPMobileAPIBaseNetRequest.m in Sources */,
 				1967C8FC19D594CA001E6656 /* SPOfferTimeToPayout.m in Sources */,
-				1991AA8819D40BF3002C648A /* SPInterstitialClient.m in Sources */,
 				1967C90219D5A393001E6656 /* SPOfferCell.m in Sources */,
-				1991AA9319D40BF3002C648A /* SPMediationCoordinator.m in Sources */,
 				1991A9C519D40B64002C648A /* main.m in Sources */,
-				1991AA8C19D40BF3002C648A /* SPInterstitialResponse.m in Sources */,
 				1967C8E619D46857001E6656 /* NSDictionary+SPSortAddition.m in Sources */,
 				1967C8C019D44317001E6656 /* SPConfiguration.m in Sources */,
-				1991AA9819D40BF3002C648A /* SponsorPaySDK.m in Sources */,
 				1967C8E919D57D40001E6656 /* NSString+Hashes.m in Sources */,
 				1967C86019D431B9001E6656 /* JMFNSNetOperation.m in Sources */,
-				1991AA8919D40BF3002C648A /* SPInterstitialEvent.m in Sources */,
 				1967C87D19D43203001E6656 /* SPMobileAPIBaseResponse.m in Sources */,
-				1991AAA919D40BF3002C648A /* SPTPNGenericAdapter.m in Sources */,
 				1967C95319D5BB36001E6656 /* SDWebImagePrefetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

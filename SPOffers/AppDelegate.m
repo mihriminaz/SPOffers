@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "SponsorPaySDK.h"
 #import "SPConfiguration.h"
 #import "SPLoadingView.h"
 
@@ -27,11 +26,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    [SponsorPaySDK startForAppId:@"2070"
-                          userId:@"spiderman"
-                   securityToken:@"1c915e3b5d42d05136185030892fbb846c278927"];
-    
     
     [self configurationSetUp:application withLaunchOptions:launchOptions];
     return YES;
